@@ -90,6 +90,7 @@
         <scene sceneID="kbz-n5-dNZ">
             <objects>
                 <navigationController storyboardIdentifier="AuthenticatedNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iu5-JX-snt" customClass="AuthenticatedNavigationController" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="Normal" image="Bubble" id="f1o-hW-lkd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zIQ-xd-ykg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -123,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w77-s2-eyb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="505"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="83" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -210,7 +211,7 @@
                             <constraint firstItem="w77-s2-eyb" firstAttribute="top" secondItem="qXs-Rt-36p" secondAttribute="bottom" id="7sJ-0Y-SG5"/>
                             <constraint firstAttribute="trailing" secondItem="w77-s2-eyb" secondAttribute="trailing" id="Abi-2F-nOk"/>
                             <constraint firstItem="w77-s2-eyb" firstAttribute="leading" secondItem="lKt-be-esS" secondAttribute="leading" id="VMK-KS-4BG"/>
-                            <constraint firstItem="Yig-fR-6Mm" firstAttribute="top" secondItem="w77-s2-eyb" secondAttribute="bottom" constant="49" id="zpM-at-jSK"/>
+                            <constraint firstItem="Yig-fR-6Mm" firstAttribute="top" secondItem="w77-s2-eyb" secondAttribute="bottom" id="zpM-at-jSK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tin nhắn" id="0jt-1V-ojt">
@@ -239,7 +240,7 @@
         <!--Tạo nhóm-->
         <scene sceneID="b1R-FN-nkZ">
             <objects>
-                <viewController id="iKI-Jh-qur" customClass="CreateGroupChatViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="iKI-Jh-qur" customClass="CreateGroupChatViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pez-ca-VSB"/>
                         <viewControllerLayoutGuide type="bottom" id="3aT-5o-Na8"/>
@@ -292,7 +293,7 @@
                                 </connections>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fIC-tj-5CV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="56" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -383,12 +384,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74h-Cj-gcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-362" y="-385"/>
+            <point key="canvasLocation" x="-362.39999999999998" y="-385.45727136431788"/>
         </scene>
         <!--Tên group-->
         <scene sceneID="L3J-NJ-Jwx">
             <objects>
-                <viewController storyboardIdentifier="MessageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZY9-Ls-RKd" customClass="MessageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessageViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZY9-Ls-RKd" customClass="MessageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="inD-gZ-PZo"/>
                         <viewControllerLayoutGuide type="bottom" id="lyZ-uy-pWg"/>
