@@ -1128,7 +1128,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/YALO",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fresher2016.FireChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baonq.p2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1151,7 +1151,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/YALO",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fresher2016.FireChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baonq.p2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

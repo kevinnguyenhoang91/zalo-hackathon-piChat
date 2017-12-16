@@ -1,14 +1,16 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B312413976AE0AFFC2D9BF330A637A214C90C3EA",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9ECE7C4486F1B69C56024DC21E220DFEF1464671",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9ECE7C4486F1B69C56024DC21E220DFEF1464671" : 9223372036854775807,
     "B312413976AE0AFFC2D9BF330A637A214C90C3EA" : 9223372036854775807,
     "A668F8956E4293234967F69FEBD9548FBB70DDA6" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8B0553FF-A7ED-4FF6-91B8-B1E41E2AA2B8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9ECE7C4486F1B69C56024DC21E220DFEF1464671" : "PiChat\/",
     "B312413976AE0AFFC2D9BF330A637A214C90C3EA" : "vng_projects\/",
     "A668F8956E4293234967F69FEBD9548FBB70DDA6" : ""
   },
@@ -16,6 +18,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YALO\/YALO.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kevinnguyenhoang91\/zalo-hackathon-piChat",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9ECE7C4486F1B69C56024DC21E220DFEF1464671"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.com\/nguyenbao95\/ios_resources.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
