@@ -378,6 +378,11 @@
         message.attachment = kAttachmentTypeImage;
         message.imageMsg = transcript.image;
     }
+    else if (transcript.imageUrl) {
+        UIImage *image = [UIImage imageWithContentsOfFile:[transcript.imageUrl path]];
+        message.attachment = kAttachmentTypeImage;
+        message.imageMsg = image;
+    }
     
     // Received message cell if message.userID is not currentUser.userID
     NSString *cellReuseIdentifier = TRANSCRIPT_DIRECTION_SEND == transcript.direction ? kChatSendCellResueIdentifier : kChatReceiveCellResueIdentifier;
@@ -403,6 +408,11 @@
     if (transcript.image) {
         message.attachment = kAttachmentTypeImage;
         message.imageMsg = transcript.image;
+    }
+    else if (transcript.imageUrl) {
+        UIImage *image = [UIImage imageWithContentsOfFile:[transcript.imageUrl path]];
+        message.attachment = kAttachmentTypeImage;
+        message.imageMsg = image;
     }
     
     // Find the required cell height
