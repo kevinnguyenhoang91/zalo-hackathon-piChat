@@ -29,6 +29,11 @@
 		84FC857E1D4B39890072C9C6 /* CreateGroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC857D1D4B39890072C9C6 /* CreateGroupChatViewController.m */; };
 		84FC85821D4B3B760072C9C6 /* YLFriendSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC85811D4B3B760072C9C6 /* YLFriendSelectCell.m */; };
 		84FEC4291D4A1A4C00C72D2E /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4281D4A1A4C00C72D2E /* MessageViewController.m */; };
+		A50CBB9B1FE56EAA00FA2429 /* P2PMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CBB9A1FE56EAA00FA2429 /* P2PMessagesViewController.m */; };
+		A50CBBA21FE56FD300FA2429 /* ProgressObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CBB9D1FE56FD300FA2429 /* ProgressObserver.m */; };
+		A50CBBA31FE56FD300FA2429 /* SessionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CBB9F1FE56FD300FA2429 /* SessionContainer.m */; };
+		A50CBBA41FE56FD300FA2429 /* Transcript.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CBBA11FE56FD300FA2429 /* Transcript.m */; };
+		A50CBBA71FE5713300FA2429 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50CBBA61FE5713300FA2429 /* MultipeerConnectivity.framework */; };
 		BC27DD681D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */; };
 		BC27DD691D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */; };
 		BC27DD6F1D5C898700E763A4 /* FBCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DD6C1D5C898700E763A4 /* FBCacheManager.m */; };
@@ -141,6 +146,15 @@
 		84FC85831D4B3BA90072C9C6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		84FEC4271D4A1A4C00C72D2E /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		84FEC4281D4A1A4C00C72D2E /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		A50CBB991FE56EAA00FA2429 /* P2PMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2PMessagesViewController.h; sourceTree = "<group>"; };
+		A50CBB9A1FE56EAA00FA2429 /* P2PMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2PMessagesViewController.m; sourceTree = "<group>"; };
+		A50CBB9C1FE56FD300FA2429 /* ProgressObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressObserver.h; sourceTree = "<group>"; };
+		A50CBB9D1FE56FD300FA2429 /* ProgressObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressObserver.m; sourceTree = "<group>"; };
+		A50CBB9E1FE56FD300FA2429 /* SessionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionContainer.h; sourceTree = "<group>"; };
+		A50CBB9F1FE56FD300FA2429 /* SessionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionContainer.m; sourceTree = "<group>"; };
+		A50CBBA01FE56FD300FA2429 /* Transcript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transcript.h; sourceTree = "<group>"; };
+		A50CBBA11FE56FD300FA2429 /* Transcript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transcript.m; sourceTree = "<group>"; };
+		A50CBBA61FE5713300FA2429 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = YALO_DB.sqlite; sourceTree = "<group>"; };
 		BC27DD6B1D5C898700E763A4 /* FBCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCacheManager.h; sourceTree = "<group>"; };
 		BC27DD6C1D5C898700E763A4 /* FBCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCacheManager.m; sourceTree = "<group>"; };
@@ -241,6 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50CBBA71FE5713300FA2429 /* MultipeerConnectivity.framework in Frameworks */,
 				2133DAB41484D8113847E3CB /* Pods_YALO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +289,7 @@
 		7C67B957EF7FCE1B698CF0E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A50CBBA61FE5713300FA2429 /* MultipeerConnectivity.framework */,
 				6DE34D9C20A04051EBD35BA2 /* Pods_YALO.framework */,
 			);
 			name = Frameworks;
@@ -376,6 +392,8 @@
 		84FC85791D4B39550072C9C6 /* GroupChatViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A50CBB991FE56EAA00FA2429 /* P2PMessagesViewController.h */,
+				A50CBB9A1FE56EAA00FA2429 /* P2PMessagesViewController.m */,
 				BE2E00021D4A0F7F00EA7689 /* GroupChatViewController.h */,
 				BE2E00031D4A0F7F00EA7689 /* GroupChatViewController.m */,
 			);
@@ -481,6 +499,20 @@
 			name = YLMessageCell;
 			sourceTree = "<group>";
 		};
+		A50CBBA51FE56FD900FA2429 /* P2P */ = {
+			isa = PBXGroup;
+			children = (
+				A50CBB9C1FE56FD300FA2429 /* ProgressObserver.h */,
+				A50CBB9D1FE56FD300FA2429 /* ProgressObserver.m */,
+				A50CBB9E1FE56FD300FA2429 /* SessionContainer.h */,
+				A50CBB9F1FE56FD300FA2429 /* SessionContainer.m */,
+				A50CBBA01FE56FD300FA2429 /* Transcript.h */,
+				A50CBBA11FE56FD300FA2429 /* Transcript.m */,
+				84C943B21D504B3F00F67378 /* YLPerson.h */,
+			);
+			name = P2P;
+			sourceTree = "<group>";
+		};
 		BC27DD6A1D5C6FE100E763A4 /* YLSQLTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,7 +569,7 @@
 		BE2E00181D4A1D9F00EA7689 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84C943B21D504B3F00F67378 /* YLPerson.h */,
+				A50CBBA51FE56FD900FA2429 /* P2P */,
 				BE2E00221D4A1F0300EA7689 /* UserModels */,
 				BE4153831D4AF189002A206A /* ChatModels */,
 				BE6CF2A71D50A759002D6468 /* Threadsafe dictionary */,
@@ -935,7 +967,9 @@
 				84FC856D1D4B33BE0072C9C6 /* YLResultSet.m in Sources */,
 				BE2E000E1D4A0F7F00EA7689 /* UIImageView+Mask.m in Sources */,
 				84EA36E81D5AC65B00B569CC /* YLDatabaseManager.m in Sources */,
+				A50CBBA21FE56FD300FA2429 /* ProgressObserver.m in Sources */,
 				BC2A19B81D52E1D900881FCC /* YLSQLTableManager.m in Sources */,
+				A50CBB9B1FE56EAA00FA2429 /* P2PMessagesViewController.m in Sources */,
 				84FC85821D4B3B760072C9C6 /* YLFriendSelectCell.m in Sources */,
 				BC2A19BF1D5337AF00881FCC /* YLSQLColumnAttributes.m in Sources */,
 				BE6CF2A51D50A72F002D6468 /* YLSessionManager.m in Sources */,
@@ -945,8 +979,10 @@
 				84EA36EA1D5AC65B00B569CC /* YLBaseModel.m in Sources */,
 				BE2EFFCC1D4A0DBD00EA7689 /* AppDelegate.m in Sources */,
 				BE2E00281D4A206800EA7689 /* YLMessageDetail.m in Sources */,
+				A50CBBA31FE56FD300FA2429 /* SessionContainer.m in Sources */,
 				BC52A39B1D52467700593E15 /* UIImage+Extension.m in Sources */,
 				8402B6E01D59CE230058036E /* YLGroupMember.m in Sources */,
+				A50CBBA41FE56FD300FA2429 /* Transcript.m in Sources */,
 				BE2EFFD51D4A0DBD00EA7689 /* YALO.xcdatamodeld in Sources */,
 				F411CE391D571D14006EA2FF /* YLNavigationController.m in Sources */,
 				BC2A19C61D534B6400881FCC /* GroupSettingViewController.m in Sources */,
