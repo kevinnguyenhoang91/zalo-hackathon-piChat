@@ -8,6 +8,8 @@
 	<string>Cho phép YALO truy cập microphone?</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -39,8 +41,26 @@
 	<true/>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>Cho phép YALO truy cập thư viện?</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This uses Bluetooth LE to transmit your location so that you can chat with those nearby you.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Cho phép YALO truy cập camera?</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Enable Location?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Enable Location?</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Enable Location?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Enable Location?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Enable Photo feature?</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>bluetooth-peripheral</string>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

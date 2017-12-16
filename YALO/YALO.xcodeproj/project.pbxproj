@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C7C771B1FE5657D003F7E07 /* TSNAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C771A1FE5657D003F7E07 /* TSNAppContext.m */; };
+		1C7C77321FE565D0003F7E07 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C771D1FE565D0003F7E07 /* LICENSE */; };
+		1C7C77331FE565D0003F7E07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C771E1FE565D0003F7E07 /* README.md */; };
+		1C7C77341FE565D0003F7E07 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C77221FE565D0003F7E07 /* UIColor+Extensions.m */; };
+		1C7C77351FE565D0003F7E07 /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C77241FE565D0003F7E07 /* UIView+Extensions.m */; };
+		1C7C77361FE565D0003F7E07 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C77261FE565D0003F7E07 /* LICENSE */; };
+		1C7C77371FE565D0003F7E07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C77271FE565D0003F7E07 /* README.md */; };
+		1C7C77381FE565D0003F7E07 /* TSNPeerBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C772A1FE565D0003F7E07 /* TSNPeerBluetooth.m */; };
+		1C7C77391FE565D0003F7E07 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C772D1FE565D0003F7E07 /* LICENSE */; };
+		1C7C773A1FE565D0003F7E07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C772E1FE565D0003F7E07 /* README.md */; };
+		1C7C773B1FE565D0003F7E07 /* TSNAtomicFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C77311FE565D0003F7E07 /* TSNAtomicFlag.m */; };
+		1C7C77401FE5660A003F7E07 /* TSNLocationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C773E1FE5660A003F7E07 /* TSNLocationContext.m */; };
+		1C7C77471FE56638003F7E07 /* TSNPeerStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C77431FE56638003F7E07 /* TSNPeerStatus.m */; };
+		1C7C77481FE56638003F7E07 /* TSNPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C77461FE56638003F7E07 /* TSNPeer.m */; };
+		1C7C77501FE57EE9003F7E07 /* YLTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C774F1FE57EE9003F7E07 /* YLTabbarViewController.m */; };
 		2133DAB41484D8113847E3CB /* Pods_YALO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE34D9C20A04051EBD35BA2 /* Pods_YALO.framework */; };
 		8402B6E01D59CE230058036E /* YLGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 8402B6DF1D59CE230058036E /* YLGroupMember.m */; };
 		842B5D111D4F24CD00BDEF0C /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B5D101D4F24CD00BDEF0C /* UIImage+Resize.m */; };
@@ -103,6 +118,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C7C77191FE5657D003F7E07 /* TSNAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNAppContext.h; sourceTree = "<group>"; };
+		1C7C771A1FE5657D003F7E07 /* TSNAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNAppContext.m; sourceTree = "<group>"; };
+		1C7C771D1FE565D0003F7E07 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1C7C771E1FE565D0003F7E07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C7C77201FE565D0003F7E07 /* TSNThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNThreading.h; sourceTree = "<group>"; };
+		1C7C77211FE565D0003F7E07 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		1C7C77221FE565D0003F7E07 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		1C7C77231FE565D0003F7E07 /* UIView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
+		1C7C77241FE565D0003F7E07 /* UIView+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
+		1C7C77261FE565D0003F7E07 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1C7C77271FE565D0003F7E07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C7C77291FE565D0003F7E07 /* TSNPeerBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNPeerBluetooth.h; sourceTree = "<group>"; };
+		1C7C772A1FE565D0003F7E07 /* TSNPeerBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNPeerBluetooth.m; sourceTree = "<group>"; };
+		1C7C772B1FE565D0003F7E07 /* TSNPeerBluetoothDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNPeerBluetoothDelegate.h; sourceTree = "<group>"; };
+		1C7C772D1FE565D0003F7E07 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1C7C772E1FE565D0003F7E07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C7C77301FE565D0003F7E07 /* TSNAtomicFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNAtomicFlag.h; sourceTree = "<group>"; };
+		1C7C77311FE565D0003F7E07 /* TSNAtomicFlag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNAtomicFlag.m; sourceTree = "<group>"; };
+		1C7C773D1FE5660A003F7E07 /* TSNLocationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNLocationContext.h; sourceTree = "<group>"; };
+		1C7C773E1FE5660A003F7E07 /* TSNLocationContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNLocationContext.m; sourceTree = "<group>"; };
+		1C7C773F1FE5660A003F7E07 /* TSNLocationContextDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNLocationContextDelegate.h; sourceTree = "<group>"; };
+		1C7C77421FE56638003F7E07 /* TSNPeerStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNPeerStatus.h; sourceTree = "<group>"; };
+		1C7C77431FE56638003F7E07 /* TSNPeerStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNPeerStatus.m; sourceTree = "<group>"; };
+		1C7C77451FE56638003F7E07 /* TSNPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNPeer.h; sourceTree = "<group>"; };
+		1C7C77461FE56638003F7E07 /* TSNPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNPeer.m; sourceTree = "<group>"; };
+		1C7C774E1FE57EE9003F7E07 /* YLTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTabbarViewController.h; sourceTree = "<group>"; };
+		1C7C774F1FE57EE9003F7E07 /* YLTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTabbarViewController.m; sourceTree = "<group>"; };
 		212C2D61EA4F15F96DCBA303 /* Pods-YALO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YALO.release.xcconfig"; path = "Pods/Target Support Files/Pods-YALO/Pods-YALO.release.xcconfig"; sourceTree = "<group>"; };
 		4CA5BACADD9E004A75B92C17 /* Pods-YALO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YALO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YALO/Pods-YALO.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE34D9C20A04051EBD35BA2 /* Pods_YALO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YALO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +319,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C7C77181FE5657D003F7E07 /* P2P */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C77441FE56638003F7E07 /* Peer */,
+				1C7C77411FE56638003F7E07 /* PeerStatus */,
+				1C7C773C1FE5660A003F7E07 /* LocationContext */,
+				1C7C772C1FE565D0003F7E07 /* TSNAtomicFlag */,
+				1C7C771C1FE565D0003F7E07 /* TSNExtensions */,
+				1C7C77251FE565D0003F7E07 /* TSNPeerBluetooth */,
+				1C7C77191FE5657D003F7E07 /* TSNAppContext.h */,
+				1C7C771A1FE5657D003F7E07 /* TSNAppContext.m */,
+			);
+			path = P2P;
+			sourceTree = "<group>";
+		};
+		1C7C771C1FE565D0003F7E07 /* TSNExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C771D1FE565D0003F7E07 /* LICENSE */,
+				1C7C771E1FE565D0003F7E07 /* README.md */,
+				1C7C771F1FE565D0003F7E07 /* Source */,
+			);
+			path = TSNExtensions;
+			sourceTree = "<group>";
+		};
+		1C7C771F1FE565D0003F7E07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C77201FE565D0003F7E07 /* TSNThreading.h */,
+				1C7C77211FE565D0003F7E07 /* UIColor+Extensions.h */,
+				1C7C77221FE565D0003F7E07 /* UIColor+Extensions.m */,
+				1C7C77231FE565D0003F7E07 /* UIView+Extensions.h */,
+				1C7C77241FE565D0003F7E07 /* UIView+Extensions.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1C7C77251FE565D0003F7E07 /* TSNPeerBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C77261FE565D0003F7E07 /* LICENSE */,
+				1C7C77271FE565D0003F7E07 /* README.md */,
+				1C7C77281FE565D0003F7E07 /* Source */,
+			);
+			path = TSNPeerBluetooth;
+			sourceTree = "<group>";
+		};
+		1C7C77281FE565D0003F7E07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C77291FE565D0003F7E07 /* TSNPeerBluetooth.h */,
+				1C7C772A1FE565D0003F7E07 /* TSNPeerBluetooth.m */,
+				1C7C772B1FE565D0003F7E07 /* TSNPeerBluetoothDelegate.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1C7C772C1FE565D0003F7E07 /* TSNAtomicFlag */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C772D1FE565D0003F7E07 /* LICENSE */,
+				1C7C772E1FE565D0003F7E07 /* README.md */,
+				1C7C772F1FE565D0003F7E07 /* Source */,
+			);
+			path = TSNAtomicFlag;
+			sourceTree = "<group>";
+		};
+		1C7C772F1FE565D0003F7E07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C77301FE565D0003F7E07 /* TSNAtomicFlag.h */,
+				1C7C77311FE565D0003F7E07 /* TSNAtomicFlag.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1C7C773C1FE5660A003F7E07 /* LocationContext */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C773D1FE5660A003F7E07 /* TSNLocationContext.h */,
+				1C7C773E1FE5660A003F7E07 /* TSNLocationContext.m */,
+				1C7C773F1FE5660A003F7E07 /* TSNLocationContextDelegate.h */,
+			);
+			path = LocationContext;
+			sourceTree = "<group>";
+		};
+		1C7C77411FE56638003F7E07 /* PeerStatus */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C77421FE56638003F7E07 /* TSNPeerStatus.h */,
+				1C7C77431FE56638003F7E07 /* TSNPeerStatus.m */,
+			);
+			path = PeerStatus;
+			sourceTree = "<group>";
+		};
+		1C7C77441FE56638003F7E07 /* Peer */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C77451FE56638003F7E07 /* TSNPeer.h */,
+				1C7C77461FE56638003F7E07 /* TSNPeer.m */,
+			);
+			path = Peer;
+			sourceTree = "<group>";
+		};
+		1C7C774D1FE57ED3003F7E07 /* TabbarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C774E1FE57EE9003F7E07 /* YLTabbarViewController.h */,
+				1C7C774F1FE57EE9003F7E07 /* YLTabbarViewController.m */,
+			);
+			name = TabbarViewController;
+			sourceTree = "<group>";
+		};
 		71A07AA3FFAC0379ED0D62CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +598,7 @@
 		84FEC4231D4A19C700C72D2E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1C7C774D1FE57ED3003F7E07 /* TabbarViewController */,
 				F411CE331D571B08006EA2FF /* AuthenticatedNavigationController */,
 				F411CE2F1D5719AF006EA2FF /* AuthenticationViewController */,
 				BC2A19C31D534B3800881FCC /* GroupSettingViewController */,
@@ -615,6 +771,7 @@
 		BE2EFFC61D4A0DBD00EA7689 /* YALO */ = {
 			isa = PBXGroup;
 			children = (
+				1C7C77181FE5657D003F7E07 /* P2P */,
 				BE2EFFCA1D4A0DBD00EA7689 /* AppDelegate.h */,
 				BE2EFFCB1D4A0DBD00EA7689 /* AppDelegate.m */,
 				BE6CF2A11D50A72F002D6468 /* int_type.h */,
@@ -816,7 +973,7 @@
 				TargetAttributes = {
 					BE2EFFC31D4A0DBD00EA7689 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 8UL2HC5M7B;
+						DevelopmentTeam = R37BQGXFF7;
 					};
 					BE2EFFDF1D4A0DBD00EA7689 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -860,11 +1017,17 @@
 				BE2EFFDA1D4A0DBD00EA7689 /* LaunchScreen.storyboard in Resources */,
 				84F12F7C1D5C87A20079123B /* YALO_DB.db in Resources */,
 				BC27DD681D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */,
+				1C7C77331FE565D0003F7E07 /* README.md in Resources */,
 				BE2E00111D4A148F00EA7689 /* GoogleService-Info.plist in Resources */,
 				BE2EFFD71D4A0DBD00EA7689 /* Assets.xcassets in Resources */,
+				1C7C77321FE565D0003F7E07 /* LICENSE in Resources */,
 				F411CE3C1D579AF7006EA2FF /* Localizable.strings in Resources */,
 				BC2A19BC1D52FA4500881FCC /* mask4.png in Resources */,
+				1C7C77391FE565D0003F7E07 /* LICENSE in Resources */,
+				1C7C773A1FE565D0003F7E07 /* README.md in Resources */,
+				1C7C77361FE565D0003F7E07 /* LICENSE in Resources */,
 				842B5D191D4F2E0200BDEF0C /* ChatReceiveCell.xib in Resources */,
+				1C7C77371FE565D0003F7E07 /* README.md in Resources */,
 				BE2EFFD21D4A0DBD00EA7689 /* Main.storyboard in Resources */,
 				842B5D181D4F2E0200BDEF0C /* ChatSendCell.xib in Resources */,
 			);
@@ -944,11 +1107,13 @@
 				F411CE321D5719C3006EA2FF /* AuthenticationViewController.m in Sources */,
 				842B5D201D4F68F600BDEF0C /* UXCollectionViewFlowLayout.m in Sources */,
 				84FC85781D4B38FB0072C9C6 /* YLFriendCell.m in Sources */,
+				1C7C77481FE56638003F7E07 /* TSNPeer.m in Sources */,
 				BC378E441D50C24B00E8B3DB /* YLSQLCommand.m in Sources */,
 				BE6CF2A61D50A72F002D6468 /* TSMutableDictionary.m in Sources */,
 				BE2E000C1D4A0F7F00EA7689 /* YLGroupTableViewCell.m in Sources */,
 				BE2E00251D4A1FFC00EA7689 /* YLGroupChat.m in Sources */,
 				84C6F1501D63251900496942 /* NSString+Extension.m in Sources */,
+				1C7C77471FE56638003F7E07 /* TSNPeerStatus.m in Sources */,
 				84FC856E1D4B33BE0072C9C6 /* YLSQLite.m in Sources */,
 				BC27DD701D5C898700E763A4 /* FBImageCacheItem.m in Sources */,
 				BC28E8A61D62B95A00517A22 /* YLExpression.m in Sources */,
@@ -964,20 +1129,25 @@
 				84F12F811D5D70DA0079123B /* MBProgressHUD.m in Sources */,
 				BE2963341D5B6170008A549D /* UIImageView+YLNetworking.m in Sources */,
 				84FC857E1D4B39890072C9C6 /* CreateGroupChatViewController.m in Sources */,
+				1C7C77341FE565D0003F7E07 /* UIColor+Extensions.m in Sources */,
 				84FC856D1D4B33BE0072C9C6 /* YLResultSet.m in Sources */,
 				BE2E000E1D4A0F7F00EA7689 /* UIImageView+Mask.m in Sources */,
 				84EA36E81D5AC65B00B569CC /* YLDatabaseManager.m in Sources */,
 				A50CBBA21FE56FD300FA2429 /* ProgressObserver.m in Sources */,
 				BC2A19B81D52E1D900881FCC /* YLSQLTableManager.m in Sources */,
+				1C7C773B1FE565D0003F7E07 /* TSNAtomicFlag.m in Sources */,
 				A50CBB9B1FE56EAA00FA2429 /* P2PMessagesViewController.m in Sources */,
 				84FC85821D4B3B760072C9C6 /* YLFriendSelectCell.m in Sources */,
 				BC2A19BF1D5337AF00881FCC /* YLSQLColumnAttributes.m in Sources */,
+				1C7C77381FE565D0003F7E07 /* TSNPeerBluetooth.m in Sources */,
+				1C7C771B1FE5657D003F7E07 /* TSNAppContext.m in Sources */,
 				BE6CF2A51D50A72F002D6468 /* YLSessionManager.m in Sources */,
 				84C943B11D50462500F67378 /* NSDate+Format.m in Sources */,
 				BE6CF2A41D50A72F002D6468 /* YLImageDownloader.m in Sources */,
 				BC378E451D50C24B00E8B3DB /* YLSQLResult.m in Sources */,
 				84EA36EA1D5AC65B00B569CC /* YLBaseModel.m in Sources */,
 				BE2EFFCC1D4A0DBD00EA7689 /* AppDelegate.m in Sources */,
+				1C7C77351FE565D0003F7E07 /* UIView+Extensions.m in Sources */,
 				BE2E00281D4A206800EA7689 /* YLMessageDetail.m in Sources */,
 				A50CBBA31FE56FD300FA2429 /* SessionContainer.m in Sources */,
 				BC52A39B1D52467700593E15 /* UIImage+Extension.m in Sources */,
@@ -985,6 +1155,7 @@
 				A50CBBA41FE56FD300FA2429 /* Transcript.m in Sources */,
 				BE2EFFD51D4A0DBD00EA7689 /* YALO.xcdatamodeld in Sources */,
 				F411CE391D571D14006EA2FF /* YLNavigationController.m in Sources */,
+				1C7C77501FE57EE9003F7E07 /* YLTabbarViewController.m in Sources */,
 				BC2A19C61D534B6400881FCC /* GroupSettingViewController.m in Sources */,
 				BE2E001B1D4A1DC900EA7689 /* YLUserInfo.m in Sources */,
 				BC28E8A71D62B95A00517A22 /* YLSortDescription.m in Sources */,
@@ -998,6 +1169,7 @@
 				BC2A19C21D53383E00881FCC /* YLSQLDataDefine.m in Sources */,
 				842B5D1C1D4F30A400BDEF0C /* YLChatCollectionViewCell.m in Sources */,
 				842B5D111D4F24CD00BDEF0C /* UIImage+Resize.m in Sources */,
+				1C7C77401FE5660A003F7E07 /* TSNLocationContext.m in Sources */,
 				F411CE361D571B50006EA2FF /* AuthenticatedNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1154,7 +1326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8UL2HC5M7B;
+				DEVELOPMENT_TEAM = R37BQGXFF7;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = YALO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1164,7 +1336,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/YALO",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baonq.p2p;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kha.p2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1177,7 +1349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8UL2HC5M7B;
+				DEVELOPMENT_TEAM = R37BQGXFF7;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = YALO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1187,7 +1359,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/YALO",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baonq.p2p;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kha.p2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

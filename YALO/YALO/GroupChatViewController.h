@@ -10,5 +10,8 @@
 
 @interface GroupChatViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITabBar *chatTabbar;
+@property (weak, nonatomic) IBOutlet UITabBarItem *p2pTabItem;
+@property (weak, nonatomic) IBOutlet UITabBarItem *firebaseTabItem;
 
 @end

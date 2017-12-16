@@ -13,6 +13,8 @@
 #import "YLPerson.h"
 #import "AuthenticatedNavigationController.h"
 #import "MBProgressHUD.h"
+#import "YLTabbarViewController.h"
+
 
 @import Firebase;
 
@@ -86,10 +88,9 @@
     }
     
     // Have user sign in and load data success
-    id authenticatedController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([AuthenticatedNavigationController class])];
+    id tabbarVC = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([YLTabbarViewController class])];
     
-    // Present AuthenticationNavigationController
-    [self presentViewController:authenticatedController animated:true completion:nil];
+    [self presentViewController:tabbarVC animated:YES completion:nil];
 }
 
 - (void)notificateLoadingModel {

@@ -13,6 +13,8 @@
 #import "YLGroupChat.h"
 #import "YLGroupMember.h"
 #import "YLMessageDetail.h"
+#import "TSNAppContext.h"
+
 
 @interface AppDelegate () <GIDSignInDelegate>
 
@@ -22,6 +24,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+    // Cancel all notifications on launch.
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+    // On iOS 8, register the user notification settings we use. This will prompt the user once.
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)])
+    {
+        UIUserNotificationType types = UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound;
+        UIUserNotificationSettings * userNotificationSettings = [UIUserNotificationSettings settingsForTypes:types
+                                                                                                  categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:userNotificationSettings];
+    }
+#endif
     
     // FIR Configure
     [FIRApp configure];
@@ -55,6 +72,8 @@
 //        [dbManager fetchAllObjectForClass:[YLGroupMember class]];
 //        [dbManager fetchAllObjectForClass:[YLMessageDetail class]];
     }
+    
+    [[TSNAppContext singleton] startCommunications];
     
     return YES;
 }
