@@ -49,6 +49,8 @@
 		A50CBBA31FE56FD300FA2429 /* SessionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CBB9F1FE56FD300FA2429 /* SessionContainer.m */; };
 		A50CBBA41FE56FD300FA2429 /* Transcript.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CBBA11FE56FD300FA2429 /* Transcript.m */; };
 		A50CBBA71FE5713300FA2429 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50CBBA61FE5713300FA2429 /* MultipeerConnectivity.framework */; };
+		A50CBBAA1FE576D700FA2429 /* YLP2PModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CBBA91FE576D700FA2429 /* YLP2PModel.m */; };
+		A50CBBAD1FE5789300FA2429 /* P2PChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CBBAC1FE5789300FA2429 /* P2PChatViewController.m */; };
 		BC27DD681D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */; };
 		BC27DD691D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */; };
 		BC27DD6F1D5C898700E763A4 /* FBCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DD6C1D5C898700E763A4 /* FBCacheManager.m */; };
@@ -197,6 +199,10 @@
 		A50CBBA01FE56FD300FA2429 /* Transcript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transcript.h; sourceTree = "<group>"; };
 		A50CBBA11FE56FD300FA2429 /* Transcript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transcript.m; sourceTree = "<group>"; };
 		A50CBBA61FE5713300FA2429 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		A50CBBA81FE576D700FA2429 /* YLP2PModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLP2PModel.h; sourceTree = "<group>"; };
+		A50CBBA91FE576D700FA2429 /* YLP2PModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLP2PModel.m; sourceTree = "<group>"; };
+		A50CBBAB1FE5789300FA2429 /* P2PChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2PChatViewController.h; sourceTree = "<group>"; };
+		A50CBBAC1FE5789300FA2429 /* P2PChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2PChatViewController.m; sourceTree = "<group>"; };
 		BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = YALO_DB.sqlite; sourceTree = "<group>"; };
 		BC27DD6B1D5C898700E763A4 /* FBCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCacheManager.h; sourceTree = "<group>"; };
 		BC27DD6C1D5C898700E763A4 /* FBCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCacheManager.m; sourceTree = "<group>"; };
@@ -547,6 +553,8 @@
 		84FC85791D4B39550072C9C6 /* GroupChatViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A50CBBAB1FE5789300FA2429 /* P2PChatViewController.h */,
+				A50CBBAC1FE5789300FA2429 /* P2PChatViewController.m */,
 				A50CBB991FE56EAA00FA2429 /* P2PMessagesViewController.h */,
 				A50CBB9A1FE56EAA00FA2429 /* P2PMessagesViewController.m */,
 				BE2E00021D4A0F7F00EA7689 /* GroupChatViewController.h */,
@@ -825,6 +833,8 @@
 				8402B6DF1D59CE230058036E /* YLGroupMember.m */,
 				BE2E00261D4A206800EA7689 /* YLMessageDetail.h */,
 				BE2E00271D4A206800EA7689 /* YLMessageDetail.m */,
+				A50CBBA81FE576D700FA2429 /* YLP2PModel.h */,
+				A50CBBA91FE576D700FA2429 /* YLP2PModel.m */,
 			);
 			name = ChatModels;
 			sourceTree = "<group>";
@@ -973,7 +983,7 @@
 				TargetAttributes = {
 					BE2EFFC31D4A0DBD00EA7689 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = R37BQGXFF7;
+						DevelopmentTeam = 8UL2HC5M7B;
 					};
 					BE2EFFDF1D4A0DBD00EA7689 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1117,6 +1127,7 @@
 				84FC856E1D4B33BE0072C9C6 /* YLSQLite.m in Sources */,
 				BC27DD701D5C898700E763A4 /* FBImageCacheItem.m in Sources */,
 				BC28E8A61D62B95A00517A22 /* YLExpression.m in Sources */,
+				A50CBBAD1FE5789300FA2429 /* P2PChatViewController.m in Sources */,
 				BE2E00211D4A1EED00EA7689 /* YLFriendInfo.m in Sources */,
 				BE2E000B1D4A0F7F00EA7689 /* GroupChatViewController.m in Sources */,
 				BC52A3A11D524A9800593E15 /* YLSQLResultCursor.m in Sources */,
@@ -1162,6 +1173,7 @@
 				BE38E21A1D4F671700107DB8 /* YLImageCache.m in Sources */,
 				84FEC4291D4A1A4C00C72D2E /* MessageViewController.m in Sources */,
 				BC28E8AA1D62B97C00517A22 /* NSString+SQLExtension.m in Sources */,
+				A50CBBAA1FE576D700FA2429 /* YLP2PModel.m in Sources */,
 				BC28E8A51D62B95A00517A22 /* YLDatabaseQueue.m in Sources */,
 				BE2EFFC91D4A0DBD00EA7689 /* main.m in Sources */,
 				BC378E431D50C24B00E8B3DB /* YLSQLDatabase.m in Sources */,
@@ -1326,7 +1338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = R37BQGXFF7;
+				DEVELOPMENT_TEAM = 8UL2HC5M7B;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = YALO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1336,7 +1348,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/YALO",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kha.p2p;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baonq.p2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1349,7 +1361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = R37BQGXFF7;
+				DEVELOPMENT_TEAM = 8UL2HC5M7B;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = YALO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1359,7 +1371,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/YALO",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kha.p2p;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baonq.p2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

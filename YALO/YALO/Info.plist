@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Cho phép YALO truy cập thư viện?</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Cho phép YALO truy cập microphone?</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -53,6 +49,8 @@
 	<string>Enable Location?</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Enable Location?</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Cho phép YALO truy cập microphone?</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Enable Photo feature?</string>
 	<key>UIBackgroundModes</key>

@@ -6,16 +6,17 @@
 //  Copyright © 2016 admin. All rights reserved.
 //
 
-#import "MessageViewController.h"
+#import "P2PChatViewController.h"
 #import "CreateGroupChatViewController.h"
 #import "YLExtDefines.h"
 #import "YLPerson.h"
 #import "GroupSettingViewController.h"
 #import "YLNavigationController.h"
+#import "Transcript.h"
 
 #define kMessageTextBoundingSize CGSizeMake(220.0f, CGFLOAT_MAX)
 
-@interface MessageViewController () <UITextViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface P2PChatViewController () <UITextViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 // UI properties
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightChatConstraint;
@@ -25,6 +26,13 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *chatCollectionView;
 @property (weak, nonatomic) IBOutlet UIImageView *sendMessageButton;
 
+
+// TableView Data source for managing sent/received messagesz
+@property (retain, nonatomic) NSMutableArray *transcripts;
+// Map of resource names to transcripts array index
+@property (retain, nonatomic) NSMutableDictionary *imageNameIndex;
+
+
 // Private properties
 @property CGSize keyboardSize;
 @property CGFloat lastContentSizeHeight;
@@ -32,7 +40,7 @@
 
 @end
 
-@implementation MessageViewController
+@implementation P2PChatViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,7 +48,13 @@
     // Notification addObserver
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didKeyBoardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didKeyBoardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(observeMessageFromGroupWithNotifcation:) name:kNotificationNewMessageObserved object:nil];
+    
+
+    // Init transcripts array to use as table view data source
+    _transcripts = [NSMutableArray new];
+    _imageNameIndex = [NSMutableDictionary new];
+
+    
     
     // Setup current textView Height
     _lastContentSizeHeight = _chatTextView.contentSize.height;
@@ -57,7 +71,7 @@
     // Set default properties
     self.navigationItem.title = self.groupChat.groupName;
     _sendMessageButton.userInteractionEnabled = false;
-     _isFirstLoad = YES;
+    _isFirstLoad = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -152,7 +166,7 @@
     YLNavigationController *navigationController = (YLNavigationController *)self.navigationController;
     
     [navigationController popToRootViewController:self animated:true completion:^{
-       // do anything ...
+        // do anything ...
     }];
 }
 
@@ -166,10 +180,11 @@
 
 
 - (IBAction)sendMessage:(id)sender {
-    // Send message with content _chatTextView.text and attachment nil. This func will push message to server and add to list message in group
-    // Maybe delay (1~2)s to push message if weak connection
-    [self.groupChat pushMessageWithContent:_chatTextView.text attachment:nil];
-
+    // Send the message
+    Transcript *transcript = [self.sessionContainer sendMessage:_chatTextView.text];
+    if (transcript) {
+        [self insertTranscript:transcript];
+    }
     // Clean message and state of _chatTextView and _heightChatConstraint
     [self textView:_chatTextView shouldChangeTextInRange:NSMakeRange(0, _chatTextView.text.length) replacementText:@""];
     _chatTextView.text = @"";
@@ -178,15 +193,6 @@
     [self textViewDidChange:_chatTextView];
 }
 
-- (void)sendMessageWithImage:(UIImage *)imageSent {
-    // Convert UIImage to NSData then NSData to NSString
-    NSData *dataImage = [[NSData alloc] init];
-    dataImage = UIImageJPEGRepresentation(imageSent, 0.8);
-    NSString *stringImage = [dataImage base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
-    
-    // Push message with attachement
-    [self.groupChat pushMessageWithContent:@"" attachment:stringImage];
-}
 
 - (IBAction)openPhoto:(id)sender {
     // Int Alert sheet ... 3 option (Take Photo, Use Gallery, Cancel)
@@ -249,16 +255,38 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
-    // Dissmiss ImagePickerViewController
-    [picker dismissViewControllerAnimated:YES completion:NULL];
+    [picker dismissViewControllerAnimated:YES completion:nil];
     
+    // Don't block the UI when writing the image to documents
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        // Get image and scale
-        UIImage* imagePicked = [info objectForKey:UIImagePickerControllerOriginalImage];
-        imagePicked = [imagePicked scaleWithSize:CGSizeMake(400, 600)];
+        // We only handle a still image
+        UIImage *imageToSave = (UIImage *)[info objectForKey:UIImagePickerControllerOriginalImage];
         
-        // Send message with attachment
-        [self sendMessageWithImage:imagePicked];
+        // Save the new image to the documents directory
+        NSData *pngData = UIImageJPEGRepresentation(imageToSave, 1.0);
+        
+        // Create a unique file name
+        NSDateFormatter *inFormat = [NSDateFormatter new];
+        [inFormat setDateFormat:@"yyMMdd-HHmmss"];
+        NSString *imageName = [NSString stringWithFormat:@"image-%@.JPG", [inFormat stringFromDate:[NSDate date]]];
+        // Create a file path to our documents directory
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:imageName];
+        [pngData writeToFile:filePath atomically:YES]; // Write the file
+        // Get a URL for this file resource
+        NSURL *imageUrl = [NSURL fileURLWithPath:filePath];
+        
+        // Send the resource to the remote peers and get the resulting progress transcript
+        Transcript *transcript = [self.sessionContainer sendImage:imageUrl];
+        
+        if (transcript) {
+            transcript.image = imageToSave;
+            
+            // Add the transcript to the data source and reload
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self insertTranscript:transcript];
+            });
+        }
     });
 }
 
@@ -333,15 +361,26 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.groupChat._messages.count;
+    return _transcripts.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     // Get message in group with indexPath.row cell
-    YLMessageDetail *message = [self.groupChat._messages objectAtIndex:indexPath.row];
+    YLMessageDetail *message = [[YLMessageDetail alloc] init];
+    
+    // Get the transcript for this row
+    Transcript *transcript = [self.transcripts objectAtIndex:indexPath.row];
+    
+    
+    message.time = [[NSDate date] timeIntervalSince1970];
+    message.content = transcript.message;
+    if (transcript.image) {
+        message.attachment = kAttachmentTypeImage;
+        message.imageMsg = transcript.image;
+    }
     
     // Received message cell if message.userID is not currentUser.userID
-    NSString *cellReuseIdentifier = [message.userID isEqualToString:[YLUserInfo sharedUserInfo].userID] ? kChatSendCellResueIdentifier : kChatReceiveCellResueIdentifier;
+    NSString *cellReuseIdentifier = TRANSCRIPT_DIRECTION_SEND == transcript.direction ? kChatSendCellResueIdentifier : kChatReceiveCellResueIdentifier;
     YLChatCollectionViewCell* chatCell = (YLChatCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellReuseIdentifier forIndexPath:indexPath];
     
     // Binding UI with YLMessageProtocol
@@ -352,7 +391,19 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     // Get message in indexPath
-    YLMessageDetail *message = [self.groupChat._messages objectAtIndex:indexPath.row];
+    // Get message in group with indexPath.row cell
+    YLMessageDetail *message = [[YLMessageDetail alloc] init];
+    
+    // Get the transcript for this row
+    Transcript *transcript = [self.transcripts objectAtIndex:indexPath.row];
+    
+    
+    message.time = [[NSDate date] timeIntervalSince1970];
+    message.content = transcript.message;
+    if (transcript.image) {
+        message.attachment = kAttachmentTypeImage;
+        message.imageMsg = transcript.image;
+    }
     
     // Find the required cell height
     //CGFloat nameSize = [message.userID boundingRectWithSize:kMessageTextBoundingSize withFont:kNameUserFontInChatMessageCell].height;
@@ -370,6 +421,62 @@
     
     return CGSizeMake(CGRectGetMaxX(collectionView.frame), cellHeight);
 }
+
+
+#pragma mark - SessionContainerDelegate
+
+- (void)receivedTranscript:(Transcript *)transcript
+{
+    // Add to table view data source and update on main thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self insertTranscript:transcript];
+    });
+}
+
+- (void)updateTranscript:(Transcript *)transcript
+{
+    // Find the data source index of the progress transcript
+    NSNumber *index = [_imageNameIndex objectForKey:transcript.imageName];
+    NSUInteger idx = [index unsignedLongValue];
+    // Replace the progress transcript with the image transcript
+    [_transcripts replaceObjectAtIndex:idx withObject:transcript];
+    
+    // Reload this particular table view row on the main thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSIndexPath *newIndexPath = [NSIndexPath indexPathForItem:idx inSection:0];
+        
+        [self.chatCollectionView reloadItemsAtIndexPaths:@[newIndexPath]];
+    });
+}
+
+
+// Helper method for inserting a sent/received message into the data source and reload the view.
+// Make sure you call this on the main thread
+- (void)insertTranscript:(Transcript *)transcript
+{
+    // Add to the data source
+    [_transcripts addObject:transcript];
+    
+    // If this is a progress transcript add it's index to the map with image name as the key
+    if (nil != transcript.progress) {
+        NSNumber *transcriptIndex = [NSNumber numberWithUnsignedLong:(_transcripts.count - 1)];
+        [_imageNameIndex setObject:transcriptIndex forKey:transcript.imageName];
+    }
+    
+    // Update the table view
+    NSIndexPath *newIndexPath = [NSIndexPath indexPathForItem:([self.transcripts count] - 1) inSection:0];
+    
+    [self.chatCollectionView insertItemsAtIndexPaths:@[newIndexPath]];
+    
+    // Scroll to the bottom so we focus on the latest message
+    NSUInteger numberOfRows = [self.chatCollectionView numberOfItemsInSection:0];
+    if (numberOfRows) {
+        [self.chatCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:(numberOfRows - 1) inSection:0]
+                                        atScrollPosition:UICollectionViewScrollPositionBottom
+                                                animated:YES];
+    }
+}
+
 
 @end
 

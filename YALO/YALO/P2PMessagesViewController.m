@@ -14,8 +14,9 @@
 #import "YLExtDefines.h"
 #import "MessageViewController.h"
 #import "SessionContainer.h"
+#import "P2PChatViewController.h"
 
-#define kDefaultServiceType @"kDefaultServiceType"
+#define kDefaultServiceType @"servicetype"
 
 @interface P2PMessagesViewController () <UITableViewDelegate, UITableViewDataSource, SessionContainerDelegate, MCBrowserViewControllerDelegate>
 
@@ -40,7 +41,7 @@
     _groupTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     _groupTableView.delegate = self;
     _groupTableView.dataSource = self;
-    
+    [self.view addSubview:_groupTableView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -57,6 +58,70 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - SessionContainerDelegate
+
+- (void)receivedTranscript:(Transcript *)transcript
+{
+//    // Add to table view data source and update on main thread
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [self insertTranscript:transcript];
+//    });
+}
+
+- (void)updateTranscript:(Transcript *)transcript
+{
+//    // Find the data source index of the progress transcript
+//    NSNumber *index = [_imageNameIndex objectForKey:transcript.imageName];
+//    NSUInteger idx = [index unsignedLongValue];
+//    // Replace the progress transcript with the image transcript
+//    [_transcripts replaceObjectAtIndex:idx withObject:transcript];
+//    
+//    // Reload this particular table view row on the main thread
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:idx inSection:0];
+//        [self.tableView reloadRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+//    });
+}
+
+
+#pragma mark - MCBrowserViewControllerDelegate methods
+
+// Override this method to filter out peers based on application specific needs
+- (BOOL)browserViewController:(MCBrowserViewController *)browserViewController shouldPresentNearbyPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info
+{
+    return YES;
+}
+
+// Override this to know when the user has pressed the "done" button in the MCBrowserViewController
+- (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController
+{
+    [browserViewController dismissViewControllerAnimated:YES completion:^{
+    
+        SessionContainer *session = [_p2pSessions lastObject];
+        
+        if (session) {
+            // Get MessageViewController with class name and set group
+            P2PChatViewController* messageViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"P2PChatViewController"];
+            session.delegate = messageViewController;
+            messageViewController.sessionContainer = session;
+            
+            // Push to messageViewController
+            [self.navigationController pushViewController:messageViewController animated:true];
+        }
+    }];
+    
+  
+}
+
+// Override this to know when the user has pressed the "cancel" button in the MCBrowserViewController
+- (void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController
+{
+    [browserViewController dismissViewControllerAnimated:YES completion:nil];
+    
+    if (_p2pSessions.count > 0)
+        [_p2pSessions removeLastObject];
 }
 
 #pragma mark - @IBAction
@@ -109,34 +174,39 @@
 //
 //    // Binding UI with YLGroupChatProtocol
 //    id<YLGroupChatProtocol> groupChatProtocol = (id<YLGroupChatProtocol>)groupChat;
-////    [cell bindDataWithProtocol:groupChatProtocol];
+//    [cell bindDataWithProtocol:groupChatProtocol];
+    
+    SessionContainer *session = nil;
+    
+    if (indexPath.row < _p2pSessions.count) {
+        session = _p2pSessions[indexPath.row];
+    }
+    
+    cell.nameGroupLabel.text = @"P2P Group chat";
+    cell.pictureGroupImageView.image = [UIImage imageNamed:@"user non avatar"];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    SessionContainer *session = nil;
     
-//    YLGroupChat *currentGroupChat = [_currentUser.groupList objectAtIndex:indexPath.row];
-//    
-//    // Update state last seen
-//    [currentGroupChat setLastSeenMessageTime:[[NSDate new] timeIntervalSince1970]];
-//    
-//    // Reload cell
-//    YLGroupTableViewCell *currentCell = [tableView cellForRowAtIndexPath:indexPath];
-//    [currentCell bindDataWithProtocol:(id<YLGroupChatProtocol>)currentGroupChat];
-//    
-//    // Update cell in other selector
-//    [self performSelector:@selector(reloadCell:) withObject:indexPath afterDelay:0.2];
-//    
-//    // Get MessageViewController with class name and set group
-//    MessageViewController* messageViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([MessageViewController class])];
-//    messageViewController.groupChat = currentGroupChat;
-//    
-//    // Push to messageViewController
-//    [self.navigationController pushViewController:messageViewController animated:true];
-//    
-//    // Deselect
-//    [tableView deselectRowAtIndexPath:indexPath animated:false];
+    if (indexPath.row < _p2pSessions.count) {
+        session = _p2pSessions[indexPath.row];
+    }
+    
+    if (session) {
+        // Get MessageViewController with class name and set group
+        P2PChatViewController* messageViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"P2PChatViewController"];
+        session.delegate = messageViewController;
+        messageViewController.sessionContainer = session;
+        
+        // Push to messageViewController
+        [self.navigationController pushViewController:messageViewController animated:true];
+    }
+    
+    // Deselect
+    [tableView deselectRowAtIndexPath:indexPath animated:false];
 }
 
 - (void)reloadCell:(id)object {

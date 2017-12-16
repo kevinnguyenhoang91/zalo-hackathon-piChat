@@ -13,6 +13,7 @@
 #import "YLPerson.h"
 #import "YLExtDefines.h"
 #import "MessageViewController.h"
+#import "P2PMessagesViewController.h"
 
 @interface GroupChatViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -102,14 +103,20 @@
 }
 
 - (IBAction)signOut:(id)sender {
-    // SignOut Firebase with nil error references
-    [[FIRAuth auth] signOut:nil];
+//    // SignOut Firebase with nil error references
+//    [[FIRAuth auth] signOut:nil];
+//    
+//    // SignOut Google
+//    [[GIDSignIn sharedInstance] signOut];
+//    
+//    // Back to AuthenticationViewController
+//    [self dismissViewControllerAnimated:true completion:nil];
     
-    // SignOut Google
-    [[GIDSignIn sharedInstance] signOut];
     
-    // Back to AuthenticationViewController
-    [self dismissViewControllerAnimated:true completion:nil];
+    
+    P2PMessagesViewController *p2pVC = [[P2PMessagesViewController alloc] init];
+    
+    [self.navigationController pushViewController:p2pVC animated:YES];
 }
 
 #pragma mark - UITableViewDelegate UITableViewDataSource

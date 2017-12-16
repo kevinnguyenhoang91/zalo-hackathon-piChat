@@ -105,6 +105,10 @@ NSString * const YLMessageDetailAttachmentKey = @"attachment";
     return [NSURL URLWithString:avatarUserURL];
 }
 
+- (UIImage *)_imageMsg {
+    return _imageMsg;
+}
+
 - (void)getImageWithCompletion:(void(^)(NSString* identifier, UIImage* image))completion {
     
     // Check in cache has user avatar with userID
@@ -160,7 +164,7 @@ NSString * const YLMessageDetailAttachmentKey = @"attachment";
         }
         
         // Callback default image attachment
-        if (completion) completion(self.messageID,[UIImage imageNamed:@"defaultAttachmentImage"]);
+        if (completion) completion(self.messageID,nil);
         
         // Attachment Path in server
         NSString* attachmentPath = [NSString stringWithFormat:@"%@/%@",kMessageAttachment, self.messageID];

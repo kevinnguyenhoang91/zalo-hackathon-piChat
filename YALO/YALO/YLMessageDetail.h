@@ -24,7 +24,7 @@ extern NSString * const YLMessageDetailAttachmentKey;
 @property (nonatomic, strong, readonly) NSString *_userID;
 @property (nonatomic, strong, readonly) NSString *_messageID;
 @property (nonatomic, strong, readonly) NSURL *_avatarUserURL;
-
+@property (nonatomic, strong, readonly) UIImage *_imageMsg;
 
 - (void)getImageWithCompletion:(void(^)(NSString* identifier, UIImage* image))completion;
 
@@ -40,6 +40,7 @@ extern NSString * const YLMessageDetailAttachmentKey;
 @property (nonatomic) NSTimeInterval time;
 @property (nonatomic, strong) NSString *content;
 @property (nonatomic, strong) NSString *attachment;
+@property (nonatomic, strong) UIImage *imageMsg;
 
 /**
  *  Init a message with parameters. The key for each value in dictionary is a constant.

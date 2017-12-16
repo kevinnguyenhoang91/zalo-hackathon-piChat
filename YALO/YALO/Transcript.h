@@ -73,6 +73,8 @@ typedef enum {
 // Resource name (optional)
 @property (readonly, nonatomic) NSProgress *progress;
 
+@property (nonatomic, strong) UIImage *image;
+
 // Initializer used for sent/received text messages
 - (id)initWithPeerID:(MCPeerID *)peerID message:(NSString *)message direction:(TranscriptDirection)direction;
 // Initializer used for sent/received image resources

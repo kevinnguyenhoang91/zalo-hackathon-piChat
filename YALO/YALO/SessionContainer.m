@@ -128,15 +128,15 @@
 //        imageUrl = [NSURL URLWithString:@"http://images.apple.com/home/images/promo_logic_pro.jpg"];
         // Send the resource to the remote peer.  The completion handler block will be called at the end of sending or if any errors occur
         progress = [self.session sendResourceAtURL:imageUrl withName:[imageUrl lastPathComponent] toPeer:peerID withCompletionHandler:^(NSError *error) {
-            // Implement this block to know when the sending resource transfer completes and if there is an error.
-            if (error) {
-                NSLog(@"Send resource to peer [%@] completed with Error [%@]", peerID.displayName, error);
-            }
-            else {
-                // Create an image transcript for this received image resource
-                Transcript *transcript = [[Transcript alloc] initWithPeerID:_session.myPeerID imageUrl:imageUrl direction:TRANSCRIPT_DIRECTION_SEND];
-                [self.delegate updateTranscript:transcript];
-            }
+//            // Implement this block to know when the sending resource transfer completes and if there is an error.
+//            if (error) {
+//                NSLog(@"Send resource to peer [%@] completed with Error [%@]", peerID.displayName, error);
+//            }
+//            else {
+//                // Create an image transcript for this received image resource
+//                Transcript *transcript = [[Transcript alloc] initWithPeerID:_session.myPeerID imageUrl:imageUrl direction:TRANSCRIPT_DIRECTION_SEND];
+//                [self.delegate updateTranscript:transcript];
+//            }
         }];
     }
     // Create an outgoing progress transcript.  For simplicity we will monitor a single NSProgress.  However users can measure each NSProgress returned individually as needed

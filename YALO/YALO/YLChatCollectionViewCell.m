@@ -35,19 +35,24 @@
     // Get user avatar with avatarURL
     [self.chatUserImage setImageWithURL:protocol._avatarUserURL placeholderImage:kUserPlaceholderImage identifier:protocol._userID];
     
-    // Check protocol and selector
-    if ([protocol respondsToSelector:@selector(getAttachmentWithCompletion:)]) {
-        // Get attachment
-        [protocol getAttachmentWithCompletion:^(NSString *identifier, id attachment) {
-            if ( [attachment isKindOfClass:[UIImage class]]) {
-                UIImage* image = attachment;
-                
-                // Check image and messageID
-                if (image && [protocol._messageID isEqualToString:identifier]) {
-                    self.chatImageView.image = image;
+    if (protocol._imageMsg) {
+        self.chatImageView.image = protocol._imageMsg;
+    }
+    else {
+        // Check protocol and selector
+        if ([protocol respondsToSelector:@selector(getAttachmentWithCompletion:)]) {
+            // Get attachment
+            [protocol getAttachmentWithCompletion:^(NSString *identifier, id attachment) {
+                if ( [attachment isKindOfClass:[UIImage class]]) {
+                    UIImage* image = attachment;
+                    
+                    // Check image and messageID
+                    if (image && [protocol._messageID isEqualToString:identifier]) {
+                        self.chatImageView.image = image;
+                    }
                 }
-            }
-        }];
+            }];
+        }
     }
 }
 
