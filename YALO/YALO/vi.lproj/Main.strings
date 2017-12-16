@@ -1,0 +1,30 @@
+
+/* Class = "UINavigationItem"; title = "Tin nhắn"; ObjectID = "0jt-1V-ojt"; */
+"0jt-1V-ojt.title" = "Tin nhắn";
+
+/* Class = "UIButton"; normalTitle = "  Đổi tên nhóm  "; ObjectID = "25B-4F-NSG"; */
+"25B-4F-NSG.normalTitle" = "  Đổi tên nhóm  ";
+
+/* Class = "UINavigationItem"; title = "Tên group"; ObjectID = "ExD-uy-UNO"; */
+"ExD-uy-UNO.title" = "Tên group";
+
+/* Class = "UITextView"; text = "Gửi tin nhắn"; ObjectID = "Iih-nS-Sjo"; */
+"Iih-nS-Sjo.text" = "Gửi tin nhắn";
+
+/* Class = "UINavigationItem"; title = "Tạo nhóm"; ObjectID = "Mdy-km-ZhE"; */
+"Mdy-km-ZhE.title" = "Tạo nhóm";
+
+/* Class = "UILabel"; text = "Thêm"; ObjectID = "UWT-Bt-FIl"; */
+"UWT-Bt-FIl.text" = "Thêm";
+
+/* Class = "UILabel"; text = "Thành viên (2)"; ObjectID = "Z0B-Dc-iee"; */
+"Z0B-Dc-iee.text" = "Thành viên ";
+
+/* Class = "UINavigationItem"; title = "Tuỳ chọn"; ObjectID = "d05-I5-RWf"; */
+"d05-I5-RWf.title" = "Tuỳ chọn";
+
+/* Class = "UILabel"; text = "Thêm"; ObjectID = "elV-ay-RLr"; */
+"elV-ay-RLr.text" = "Thêm";
+
+/* Class = "UILabel"; text = "thanhqhc"; ObjectID = "rdX-Gn-LSG"; */
+"rdX-Gn-LSG.text" = "thanhqhc";

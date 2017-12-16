@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS "GROUP";
+CREATE TABLE "GROUP" ("groupID" CHAR PRIMARY KEY  NOT NULL ,"name" text DEFAULT (null) ,"lastupdate" DATETIME);
+DROP TABLE IF EXISTS "GROUP_MEMBER";
+CREATE TABLE "GROUP_MEMBER" ("groupID" CHAR PRIMARY KEY  NOT NULL ,"userID" CHAR NOT NULL ,"nickname" text DEFAULT (null) );
+DROP TABLE IF EXISTS "MESSAGE";
+CREATE TABLE "MESSAGE" ("messageID" CHAR PRIMARY KEY  NOT NULL  DEFAULT (null) ,"userID" CHAR NOT NULL  DEFAULT (null) ,"time" DOUBLE DEFAULT (null) ,"attachment" text DEFAULT (null) ,"content" text DEFAULT (null) ,"groupID" CHAR);
+DROP TABLE IF EXISTS "USER";
+CREATE TABLE "USER" ("userID" CHAR PRIMARY KEY  NOT NULL ,"username" text DEFAULT (null) ,"avatarurl" VARCHAR, "email" TEXT, "lastLogonTime" DOUBLE);
+INSERT INTO "USER" VALUES('DlGEbjjrx4VxrhqofFpd6LGlSev1','Đạo Nguyễn Văn','','hoangdao9d@gmail.com',1470891305.505216);
+INSERT INTO "USER" VALUES('sUwozaOTgZNHPqvZJWISOkr12eq1','Chấn Thành','https://lh3.googleusercontent.com/-3Xag8MwQYT8/AAAAAAAAAAI/AAAAAAAAA5Q/b2XAdXjMGzQ/photo.jpg','qhcthanh@gmail.com',1470907263.314041);

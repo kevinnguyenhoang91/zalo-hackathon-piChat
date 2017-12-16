@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B312413976AE0AFFC2D9BF330A637A214C90C3EA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B312413976AE0AFFC2D9BF330A637A214C90C3EA" : 9223372036854775807,
+    "A668F8956E4293234967F69FEBD9548FBB70DDA6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8B0553FF-A7ED-4FF6-91B8-B1E41E2AA2B8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B312413976AE0AFFC2D9BF330A637A214C90C3EA" : "vng_projects\/",
+    "A668F8956E4293234967F69FEBD9548FBB70DDA6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YALO",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YALO\/YALO.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.com\/nguyenbao95\/ios_resources.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A668F8956E4293234967F69FEBD9548FBB70DDA6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/g2git.zing.vn\/themnd\/fresher2016.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B312413976AE0AFFC2D9BF330A637A214C90C3EA"
+    }
+  ]
+}

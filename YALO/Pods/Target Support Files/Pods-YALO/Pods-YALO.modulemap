@@ -1,0 +1,6 @@
+framework module Pods_YALO {
+  umbrella header "Pods-YALO-umbrella.h"
+
+  export *
+  module * { export * }
+}

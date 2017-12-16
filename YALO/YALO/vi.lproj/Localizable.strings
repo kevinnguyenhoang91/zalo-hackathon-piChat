@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  YALO
+
+  Created by Quach Ha Chan Thanh on 8/7/16.
+  Copyright © 2016 admin. All rights reserved.
+*/
+
+// ----------------- Alert String -----------------
+"Error" = "Lỗi";
+"OK" = "Đồng ý";
+"Cancel" = "Huỷ bỏ";
+"Device has no camera" = "Thiết bị không có máy ảnh";
+
+// ----------------- Setting String -----------------
+"Change background" = "Thay đổi hình nền";
+"Remove message" = "Xoá tin nhắn";
+"Leave group" = "Rời khỏi nhóm";
+"Kick member" = "Mời khỏi nhóm";
+
+// ----------------- Message String -----------------
+"Send message" = "Gửi tin nhắn";
+"Select Photo" = "Chọn ảnh";
+"Take Photo"  = "Chụp ảnh";
+
+// ----------------- Group String -----------------
+"No message" = "Hiện chưa có tin nhắn";
+"sent attachment" = "đã gửi một tập tin đính kèm";
+"No name" = "Chưa đặt tên";
+
+// ----------------- Date String -----------------
+"%d days" = "%d ngày";
+"%d weeks" = "%d tuần";
+"%d months" = "%d tháng";

@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  YALO
+
+  Created by Quach Ha Chan Thanh on 8/7/16.
+  Copyright © 2016 admin. All rights reserved.
+*/
+
+// ----------------- Alert String -----------------
+"Error" = "Error";
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Device has no camera" = "Device has no camera";
+
+// ----------------- Setting String -----------------
+"Change background" = "Change background";
+"Remove message" = "Remove message";
+"Leave group" = "Leave group";
+"Kick member" = "Kick member";
+
+// ----------------- Message String -----------------
+"Send message" = "Send message";
+"Select Photo" = "Select Photo";
+"Take Photo"  = "Take Photo";
+
+// ----------------- Group String -----------------
+"No message" = "No message";
+"sent attachment" = "has sent attachment";
+"No name" = "No name";
+
+// ----------------- Date String -----------------
+"%d days" = "%d days";
+"%d weeks" = "%d weeks";
+"%d months" = "%d months";

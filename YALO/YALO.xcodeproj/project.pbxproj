@@ -1,0 +1,1261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2133DAB41484D8113847E3CB /* Pods_YALO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE34D9C20A04051EBD35BA2 /* Pods_YALO.framework */; };
+		8402B6E01D59CE230058036E /* YLGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 8402B6DF1D59CE230058036E /* YLGroupMember.m */; };
+		842B5D111D4F24CD00BDEF0C /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B5D101D4F24CD00BDEF0C /* UIImage+Resize.m */; };
+		842B5D181D4F2E0200BDEF0C /* ChatSendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842B5D151D4F2E0200BDEF0C /* ChatSendCell.xib */; };
+		842B5D191D4F2E0200BDEF0C /* ChatReceiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842B5D161D4F2E0200BDEF0C /* ChatReceiveCell.xib */; };
+		842B5D1C1D4F30A400BDEF0C /* YLChatCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B5D1B1D4F30A400BDEF0C /* YLChatCollectionViewCell.m */; };
+		842B5D201D4F68F600BDEF0C /* UXCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B5D1F1D4F68F600BDEF0C /* UXCollectionViewFlowLayout.m */; };
+		84C6F1501D63251900496942 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6F14F1D63251900496942 /* NSString+Extension.m */; };
+		84C943B11D50462500F67378 /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C943B01D50462500F67378 /* NSDate+Format.m */; };
+		84EA36E81D5AC65B00B569CC /* YLDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA36E11D5AC65B00B569CC /* YLDatabaseManager.m */; };
+		84EA36EA1D5AC65B00B569CC /* YLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA36E41D5AC65B00B569CC /* YLBaseModel.m */; };
+		84F12F7C1D5C87A20079123B /* YALO_DB.db in Resources */ = {isa = PBXBuildFile; fileRef = 84F12F7B1D5C87A20079123B /* YALO_DB.db */; };
+		84F12F7D1D5C87A20079123B /* YALO_DB.db in Resources */ = {isa = PBXBuildFile; fileRef = 84F12F7B1D5C87A20079123B /* YALO_DB.db */; };
+		84F12F811D5D70DA0079123B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F12F801D5D70DA0079123B /* MBProgressHUD.m */; };
+		84F12F821D5D70DA0079123B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F12F801D5D70DA0079123B /* MBProgressHUD.m */; };
+		84FC856C1D4B33BE0072C9C6 /* YLRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC85661D4B33BE0072C9C6 /* YLRequestManager.m */; };
+		84FC856D1D4B33BE0072C9C6 /* YLResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC85681D4B33BE0072C9C6 /* YLResultSet.m */; };
+		84FC856E1D4B33BE0072C9C6 /* YLSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC856B1D4B33BE0072C9C6 /* YLSQLite.m */; };
+		84FC85781D4B38FB0072C9C6 /* YLFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC85771D4B38FB0072C9C6 /* YLFriendCell.m */; };
+		84FC857E1D4B39890072C9C6 /* CreateGroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC857D1D4B39890072C9C6 /* CreateGroupChatViewController.m */; };
+		84FC85821D4B3B760072C9C6 /* YLFriendSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC85811D4B3B760072C9C6 /* YLFriendSelectCell.m */; };
+		84FEC4291D4A1A4C00C72D2E /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4281D4A1A4C00C72D2E /* MessageViewController.m */; };
+		BC27DD681D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */; };
+		BC27DD691D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */; };
+		BC27DD6F1D5C898700E763A4 /* FBCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DD6C1D5C898700E763A4 /* FBCacheManager.m */; };
+		BC27DD701D5C898700E763A4 /* FBImageCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DD6E1D5C898700E763A4 /* FBImageCacheItem.m */; };
+		BC28E8A51D62B95A00517A22 /* YLDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BC28E8A01D62B95A00517A22 /* YLDatabaseQueue.m */; };
+		BC28E8A61D62B95A00517A22 /* YLExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BC28E8A21D62B95A00517A22 /* YLExpression.m */; };
+		BC28E8A71D62B95A00517A22 /* YLSortDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = BC28E8A41D62B95A00517A22 /* YLSortDescription.m */; };
+		BC28E8AA1D62B97C00517A22 /* NSString+SQLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BC28E8A91D62B97C00517A22 /* NSString+SQLExtension.m */; };
+		BC2A19B81D52E1D900881FCC /* YLSQLTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A19B71D52E1D900881FCC /* YLSQLTableManager.m */; };
+		BC2A19BC1D52FA4500881FCC /* mask4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A19BB1D52FA4500881FCC /* mask4.png */; };
+		BC2A19BF1D5337AF00881FCC /* YLSQLColumnAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A19BE1D5337AF00881FCC /* YLSQLColumnAttributes.m */; };
+		BC2A19C21D53383E00881FCC /* YLSQLDataDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A19C11D53383E00881FCC /* YLSQLDataDefine.m */; };
+		BC2A19C61D534B6400881FCC /* GroupSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A19C51D534B6400881FCC /* GroupSettingViewController.m */; };
+		BC2A19C91D534B8B00881FCC /* YLGroupSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A19C81D534B8B00881FCC /* YLGroupSettingCell.m */; };
+		BC2B6B301D5481A3003DA72D /* YLSQLRowData.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2B6B2F1D5481A3003DA72D /* YLSQLRowData.m */; };
+		BC378E431D50C24B00E8B3DB /* YLSQLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC378E3E1D50C24B00E8B3DB /* YLSQLDatabase.m */; };
+		BC378E441D50C24B00E8B3DB /* YLSQLCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BC378E401D50C24B00E8B3DB /* YLSQLCommand.m */; };
+		BC378E451D50C24B00E8B3DB /* YLSQLResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BC378E421D50C24B00E8B3DB /* YLSQLResult.m */; };
+		BC52A39A1D52467700593E15 /* maskImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC52A3971D52467700593E15 /* maskImage.jpg */; };
+		BC52A39B1D52467700593E15 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52A3991D52467700593E15 /* UIImage+Extension.m */; };
+		BC52A3A11D524A9800593E15 /* YLSQLResultCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52A3A01D524A9800593E15 /* YLSQLResultCursor.m */; };
+		BE2963341D5B6170008A549D /* UIImageView+YLNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2963331D5B6170008A549D /* UIImageView+YLNetworking.m */; };
+		BE2E000B1D4A0F7F00EA7689 /* GroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E00031D4A0F7F00EA7689 /* GroupChatViewController.m */; };
+		BE2E000C1D4A0F7F00EA7689 /* YLGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E00051D4A0F7F00EA7689 /* YLGroupTableViewCell.m */; };
+		BE2E000E1D4A0F7F00EA7689 /* UIImageView+Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E00081D4A0F7F00EA7689 /* UIImageView+Mask.m */; };
+		BE2E00111D4A148F00EA7689 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE2E00101D4A148F00EA7689 /* GoogleService-Info.plist */; };
+		BE2E001B1D4A1DC900EA7689 /* YLUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E001A1D4A1DC900EA7689 /* YLUserInfo.m */; };
+		BE2E001E1D4A1EBF00EA7689 /* YLPersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E001D1D4A1EBF00EA7689 /* YLPersonInfo.m */; };
+		BE2E00211D4A1EED00EA7689 /* YLFriendInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E00201D4A1EED00EA7689 /* YLFriendInfo.m */; };
+		BE2E00251D4A1FFC00EA7689 /* YLGroupChat.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E00241D4A1FFC00EA7689 /* YLGroupChat.m */; };
+		BE2E00281D4A206800EA7689 /* YLMessageDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E00271D4A206800EA7689 /* YLMessageDetail.m */; };
+		BE2EFFC91D4A0DBD00EA7689 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2EFFC81D4A0DBD00EA7689 /* main.m */; };
+		BE2EFFCC1D4A0DBD00EA7689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2EFFCB1D4A0DBD00EA7689 /* AppDelegate.m */; };
+		BE2EFFD21D4A0DBD00EA7689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2EFFD01D4A0DBD00EA7689 /* Main.storyboard */; };
+		BE2EFFD51D4A0DBD00EA7689 /* YALO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE2EFFD31D4A0DBD00EA7689 /* YALO.xcdatamodeld */; };
+		BE2EFFD71D4A0DBD00EA7689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2EFFD61D4A0DBD00EA7689 /* Assets.xcassets */; };
+		BE2EFFDA1D4A0DBD00EA7689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2EFFD81D4A0DBD00EA7689 /* LaunchScreen.storyboard */; };
+		BE2EFFE51D4A0DBD00EA7689 /* YALOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2EFFE41D4A0DBD00EA7689 /* YALOTests.m */; };
+		BE2EFFF01D4A0DBD00EA7689 /* YALOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2EFFEF1D4A0DBD00EA7689 /* YALOUITests.m */; };
+		BE38E21A1D4F671700107DB8 /* YLImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE38E2191D4F671700107DB8 /* YLImageCache.m */; };
+		BE6CF2A41D50A72F002D6468 /* YLImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6CF29E1D50A72F002D6468 /* YLImageDownloader.m */; };
+		BE6CF2A51D50A72F002D6468 /* YLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6CF2A01D50A72F002D6468 /* YLSessionManager.m */; };
+		BE6CF2A61D50A72F002D6468 /* TSMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6CF2A31D50A72F002D6468 /* TSMutableDictionary.m */; };
+		F411CE321D5719C3006EA2FF /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F411CE311D5719C3006EA2FF /* AuthenticationViewController.m */; };
+		F411CE361D571B50006EA2FF /* AuthenticatedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F411CE351D571B50006EA2FF /* AuthenticatedNavigationController.m */; };
+		F411CE391D571D14006EA2FF /* YLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F411CE381D571D14006EA2FF /* YLNavigationController.m */; };
+		F411CE3C1D579AF7006EA2FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F411CE3E1D579AF7006EA2FF /* Localizable.strings */; };
+		F411CE461D579C4F006EA2FF /* YLGroupMembersSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F411CE451D579C4F006EA2FF /* YLGroupMembersSettingCell.m */; };
+		F411CE4B1D579C9C006EA2FF /* YLUserInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F411CE4A1D579C9C006EA2FF /* YLUserInfoCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE2EFFE11D4A0DBD00EA7689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE2EFFBC1D4A0DBD00EA7689 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2EFFC31D4A0DBD00EA7689;
+			remoteInfo = YALO;
+		};
+		BE2EFFEC1D4A0DBD00EA7689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE2EFFBC1D4A0DBD00EA7689 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2EFFC31D4A0DBD00EA7689;
+			remoteInfo = YALO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		212C2D61EA4F15F96DCBA303 /* Pods-YALO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YALO.release.xcconfig"; path = "Pods/Target Support Files/Pods-YALO/Pods-YALO.release.xcconfig"; sourceTree = "<group>"; };
+		4CA5BACADD9E004A75B92C17 /* Pods-YALO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YALO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YALO/Pods-YALO.debug.xcconfig"; sourceTree = "<group>"; };
+		6DE34D9C20A04051EBD35BA2 /* Pods_YALO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YALO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8402B6DE1D59CE230058036E /* YLGroupMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGroupMember.h; sourceTree = "<group>"; };
+		8402B6DF1D59CE230058036E /* YLGroupMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGroupMember.m; sourceTree = "<group>"; };
+		842B5D0F1D4F24CD00BDEF0C /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		842B5D101D4F24CD00BDEF0C /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		842B5D151D4F2E0200BDEF0C /* ChatSendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatSendCell.xib; sourceTree = "<group>"; };
+		842B5D161D4F2E0200BDEF0C /* ChatReceiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatReceiveCell.xib; sourceTree = "<group>"; };
+		842B5D1A1D4F30A400BDEF0C /* YLChatCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLChatCollectionViewCell.h; sourceTree = "<group>"; };
+		842B5D1B1D4F30A400BDEF0C /* YLChatCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLChatCollectionViewCell.m; sourceTree = "<group>"; };
+		842B5D1E1D4F68F600BDEF0C /* UXCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		842B5D1F1D4F68F600BDEF0C /* UXCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		84C6F14E1D63251900496942 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		84C6F14F1D63251900496942 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		84C943AF1D50462500F67378 /* NSDate+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Format.h"; sourceTree = "<group>"; };
+		84C943B01D50462500F67378 /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Format.m"; sourceTree = "<group>"; };
+		84C943B21D504B3F00F67378 /* YLPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPerson.h; sourceTree = "<group>"; };
+		84C943B41D50969800F67378 /* YLExtDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLExtDefines.h; sourceTree = "<group>"; };
+		84C943B61D50ACE800F67378 /* YLNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNetworking.h; sourceTree = "<group>"; };
+		84EA36DE1D5AC65B00B569CC /* YLBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseModel.h; sourceTree = "<group>"; };
+		84EA36E01D5AC65B00B569CC /* YLDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDatabaseManager.h; sourceTree = "<group>"; };
+		84EA36E11D5AC65B00B569CC /* YLDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDatabaseManager.m; sourceTree = "<group>"; };
+		84EA36E41D5AC65B00B569CC /* YLBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseModel.m; sourceTree = "<group>"; };
+		84EA36ED1D5AD2DC00B569CC /* UIImageView+YLNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YLNetworking.h"; sourceTree = "<group>"; };
+		84F12F7B1D5C87A20079123B /* YALO_DB.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YALO_DB.db; sourceTree = "<group>"; };
+		84F12F7F1D5D70DA0079123B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		84F12F801D5D70DA0079123B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		84FC85651D4B33BE0072C9C6 /* YLRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLRequestManager.h; path = YALO/YLRequestManager.h; sourceTree = "<group>"; };
+		84FC85661D4B33BE0072C9C6 /* YLRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLRequestManager.m; path = YALO/YLRequestManager.m; sourceTree = "<group>"; };
+		84FC85671D4B33BE0072C9C6 /* YLResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLResultSet.h; path = YALO/YLResultSet.h; sourceTree = "<group>"; };
+		84FC85681D4B33BE0072C9C6 /* YLResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLResultSet.m; path = YALO/YLResultSet.m; sourceTree = "<group>"; };
+		84FC856A1D4B33BE0072C9C6 /* YLSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLSQLite.h; path = YALO/YLSQLite.h; sourceTree = "<group>"; };
+		84FC856B1D4B33BE0072C9C6 /* YLSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLSQLite.m; path = YALO/YLSQLite.m; sourceTree = "<group>"; };
+		84FC85761D4B38FB0072C9C6 /* YLFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFriendCell.h; sourceTree = "<group>"; };
+		84FC85771D4B38FB0072C9C6 /* YLFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFriendCell.m; sourceTree = "<group>"; };
+		84FC857C1D4B39890072C9C6 /* CreateGroupChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupChatViewController.h; sourceTree = "<group>"; };
+		84FC857D1D4B39890072C9C6 /* CreateGroupChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupChatViewController.m; sourceTree = "<group>"; };
+		84FC85801D4B3B760072C9C6 /* YLFriendSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFriendSelectCell.h; sourceTree = "<group>"; };
+		84FC85811D4B3B760072C9C6 /* YLFriendSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFriendSelectCell.m; sourceTree = "<group>"; };
+		84FC85831D4B3BA90072C9C6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84FEC4271D4A1A4C00C72D2E /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		84FEC4281D4A1A4C00C72D2E /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = YALO_DB.sqlite; sourceTree = "<group>"; };
+		BC27DD6B1D5C898700E763A4 /* FBCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCacheManager.h; sourceTree = "<group>"; };
+		BC27DD6C1D5C898700E763A4 /* FBCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCacheManager.m; sourceTree = "<group>"; };
+		BC27DD6D1D5C898700E763A4 /* FBImageCacheItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBImageCacheItem.h; sourceTree = "<group>"; };
+		BC27DD6E1D5C898700E763A4 /* FBImageCacheItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBImageCacheItem.m; sourceTree = "<group>"; };
+		BC28E89F1D62B95A00517A22 /* YLDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDatabaseQueue.h; sourceTree = "<group>"; };
+		BC28E8A01D62B95A00517A22 /* YLDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDatabaseQueue.m; sourceTree = "<group>"; };
+		BC28E8A11D62B95A00517A22 /* YLExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExpression.h; sourceTree = "<group>"; };
+		BC28E8A21D62B95A00517A22 /* YLExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExpression.m; sourceTree = "<group>"; };
+		BC28E8A31D62B95A00517A22 /* YLSortDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSortDescription.h; sourceTree = "<group>"; };
+		BC28E8A41D62B95A00517A22 /* YLSortDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSortDescription.m; sourceTree = "<group>"; };
+		BC28E8A81D62B97C00517A22 /* NSString+SQLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SQLExtension.h"; sourceTree = "<group>"; };
+		BC28E8A91D62B97C00517A22 /* NSString+SQLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SQLExtension.m"; sourceTree = "<group>"; };
+		BC2A19B61D52E1D900881FCC /* YLSQLTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSQLTableManager.h; sourceTree = "<group>"; };
+		BC2A19B71D52E1D900881FCC /* YLSQLTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSQLTableManager.m; sourceTree = "<group>"; };
+		BC2A19BB1D52FA4500881FCC /* mask4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask4.png; sourceTree = "<group>"; };
+		BC2A19BD1D5337AF00881FCC /* YLSQLColumnAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSQLColumnAttributes.h; sourceTree = "<group>"; };
+		BC2A19BE1D5337AF00881FCC /* YLSQLColumnAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSQLColumnAttributes.m; sourceTree = "<group>"; };
+		BC2A19C01D53383E00881FCC /* YLSQLDataDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSQLDataDefine.h; sourceTree = "<group>"; };
+		BC2A19C11D53383E00881FCC /* YLSQLDataDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSQLDataDefine.m; sourceTree = "<group>"; };
+		BC2A19C41D534B6400881FCC /* GroupSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSettingViewController.h; sourceTree = "<group>"; };
+		BC2A19C51D534B6400881FCC /* GroupSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSettingViewController.m; sourceTree = "<group>"; };
+		BC2A19C71D534B8B00881FCC /* YLGroupSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGroupSettingCell.h; sourceTree = "<group>"; };
+		BC2A19C81D534B8B00881FCC /* YLGroupSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGroupSettingCell.m; sourceTree = "<group>"; };
+		BC2B6B2E1D5481A3003DA72D /* YLSQLRowData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSQLRowData.h; sourceTree = "<group>"; };
+		BC2B6B2F1D5481A3003DA72D /* YLSQLRowData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSQLRowData.m; sourceTree = "<group>"; };
+		BC378E3D1D50C24B00E8B3DB /* YLSQLDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSQLDatabase.h; sourceTree = "<group>"; };
+		BC378E3E1D50C24B00E8B3DB /* YLSQLDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSQLDatabase.m; sourceTree = "<group>"; };
+		BC378E3F1D50C24B00E8B3DB /* YLSQLCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSQLCommand.h; sourceTree = "<group>"; };
+		BC378E401D50C24B00E8B3DB /* YLSQLCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSQLCommand.m; sourceTree = "<group>"; };
+		BC378E411D50C24B00E8B3DB /* YLSQLResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSQLResult.h; sourceTree = "<group>"; };
+		BC378E421D50C24B00E8B3DB /* YLSQLResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSQLResult.m; sourceTree = "<group>"; };
+		BC52A3971D52467700593E15 /* maskImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maskImage.jpg; sourceTree = "<group>"; };
+		BC52A3981D52467700593E15 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		BC52A3991D52467700593E15 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		BC52A39F1D524A9800593E15 /* YLSQLResultCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSQLResultCursor.h; sourceTree = "<group>"; };
+		BC52A3A01D524A9800593E15 /* YLSQLResultCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSQLResultCursor.m; sourceTree = "<group>"; };
+		BE2963331D5B6170008A549D /* UIImageView+YLNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YLNetworking.m"; sourceTree = "<group>"; };
+		BE2E00021D4A0F7F00EA7689 /* GroupChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupChatViewController.h; sourceTree = "<group>"; };
+		BE2E00031D4A0F7F00EA7689 /* GroupChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChatViewController.m; sourceTree = "<group>"; };
+		BE2E00041D4A0F7F00EA7689 /* YLGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGroupTableViewCell.h; sourceTree = "<group>"; };
+		BE2E00051D4A0F7F00EA7689 /* YLGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGroupTableViewCell.m; sourceTree = "<group>"; };
+		BE2E00071D4A0F7F00EA7689 /* UIImageView+Mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Mask.h"; sourceTree = "<group>"; };
+		BE2E00081D4A0F7F00EA7689 /* UIImageView+Mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Mask.m"; sourceTree = "<group>"; };
+		BE2E00101D4A148F00EA7689 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE2E00191D4A1DC900EA7689 /* YLUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLUserInfo.h; sourceTree = "<group>"; };
+		BE2E001A1D4A1DC900EA7689 /* YLUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUserInfo.m; sourceTree = "<group>"; };
+		BE2E001C1D4A1EBF00EA7689 /* YLPersonInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPersonInfo.h; sourceTree = "<group>"; };
+		BE2E001D1D4A1EBF00EA7689 /* YLPersonInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPersonInfo.m; sourceTree = "<group>"; };
+		BE2E001F1D4A1EED00EA7689 /* YLFriendInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFriendInfo.h; sourceTree = "<group>"; };
+		BE2E00201D4A1EED00EA7689 /* YLFriendInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFriendInfo.m; sourceTree = "<group>"; };
+		BE2E00231D4A1FFC00EA7689 /* YLGroupChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGroupChat.h; sourceTree = "<group>"; };
+		BE2E00241D4A1FFC00EA7689 /* YLGroupChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGroupChat.m; sourceTree = "<group>"; };
+		BE2E00261D4A206800EA7689 /* YLMessageDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMessageDetail.h; sourceTree = "<group>"; };
+		BE2E00271D4A206800EA7689 /* YLMessageDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMessageDetail.m; sourceTree = "<group>"; };
+		BE2EFFC41D4A0DBD00EA7689 /* YALO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YALO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2EFFC81D4A0DBD00EA7689 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE2EFFCA1D4A0DBD00EA7689 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE2EFFCB1D4A0DBD00EA7689 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE2EFFD11D4A0DBD00EA7689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE2EFFD41D4A0DBD00EA7689 /* YALO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YALO.xcdatamodel; sourceTree = "<group>"; };
+		BE2EFFD61D4A0DBD00EA7689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE2EFFD91D4A0DBD00EA7689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE2EFFDB1D4A0DBD00EA7689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2EFFE01D4A0DBD00EA7689 /* YALOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YALOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2EFFE41D4A0DBD00EA7689 /* YALOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YALOTests.m; sourceTree = "<group>"; };
+		BE2EFFE61D4A0DBD00EA7689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2EFFEB1D4A0DBD00EA7689 /* YALOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YALOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2EFFEF1D4A0DBD00EA7689 /* YALOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YALOUITests.m; sourceTree = "<group>"; };
+		BE2EFFF11D4A0DBD00EA7689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE38E2181D4F671700107DB8 /* YLImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLImageCache.h; path = YALO/YLImageCache.h; sourceTree = "<group>"; };
+		BE38E2191D4F671700107DB8 /* YLImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLImageCache.m; path = YALO/YLImageCache.m; sourceTree = "<group>"; };
+		BE6CF29D1D50A72F002D6468 /* YLImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLImageDownloader.h; path = YALO/YLImageDownloader.h; sourceTree = "<group>"; };
+		BE6CF29E1D50A72F002D6468 /* YLImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLImageDownloader.m; path = YALO/YLImageDownloader.m; sourceTree = "<group>"; };
+		BE6CF29F1D50A72F002D6468 /* YLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLSessionManager.h; path = YALO/YLSessionManager.h; sourceTree = "<group>"; };
+		BE6CF2A01D50A72F002D6468 /* YLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLSessionManager.m; path = YALO/YLSessionManager.m; sourceTree = "<group>"; };
+		BE6CF2A11D50A72F002D6468 /* int_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = int_type.h; sourceTree = "<group>"; };
+		BE6CF2A21D50A72F002D6468 /* TSMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMutableDictionary.h; sourceTree = "<group>"; };
+		BE6CF2A31D50A72F002D6468 /* TSMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMutableDictionary.m; sourceTree = "<group>"; };
+		F411CE301D5719C3006EA2FF /* AuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationViewController.h; sourceTree = "<group>"; };
+		F411CE311D5719C3006EA2FF /* AuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationViewController.m; sourceTree = "<group>"; };
+		F411CE341D571B50006EA2FF /* AuthenticatedNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticatedNavigationController.h; sourceTree = "<group>"; };
+		F411CE351D571B50006EA2FF /* AuthenticatedNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticatedNavigationController.m; sourceTree = "<group>"; };
+		F411CE371D571D14006EA2FF /* YLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNavigationController.h; sourceTree = "<group>"; };
+		F411CE381D571D14006EA2FF /* YLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNavigationController.m; sourceTree = "<group>"; };
+		F411CE3F1D579AFB006EA2FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F411CE401D579B3F006EA2FF /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		F411CE411D579B3F006EA2FF /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F411CE431D579B66006EA2FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F411CE441D579C4F006EA2FF /* YLGroupMembersSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGroupMembersSettingCell.h; sourceTree = "<group>"; };
+		F411CE451D579C4F006EA2FF /* YLGroupMembersSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGroupMembersSettingCell.m; sourceTree = "<group>"; };
+		F411CE491D579C9C006EA2FF /* YLUserInfoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLUserInfoCollectionViewCell.h; sourceTree = "<group>"; };
+		F411CE4A1D579C9C006EA2FF /* YLUserInfoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUserInfoCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE2EFFC11D4A0DBD00EA7689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2133DAB41484D8113847E3CB /* Pods_YALO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2EFFDD1D4A0DBD00EA7689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2EFFE81D4A0DBD00EA7689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71A07AA3FFAC0379ED0D62CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5BACADD9E004A75B92C17 /* Pods-YALO.debug.xcconfig */,
+				212C2D61EA4F15F96DCBA303 /* Pods-YALO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C67B957EF7FCE1B698CF0E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DE34D9C20A04051EBD35BA2 /* Pods_YALO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		842B5D1D1D4F68E600BDEF0C /* UXCollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				842B5D1E1D4F68F600BDEF0C /* UXCollectionViewFlowLayout.h */,
+				842B5D1F1D4F68F600BDEF0C /* UXCollectionViewFlowLayout.m */,
+			);
+			name = UXCollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		84EA36DC1D5AC62D00B569CC /* YLORM */ = {
+			isa = PBXGroup;
+			children = (
+				BC28E89F1D62B95A00517A22 /* YLDatabaseQueue.h */,
+				BC28E8A01D62B95A00517A22 /* YLDatabaseQueue.m */,
+				84EA36E01D5AC65B00B569CC /* YLDatabaseManager.h */,
+				84EA36E11D5AC65B00B569CC /* YLDatabaseManager.m */,
+				BC28E8A11D62B95A00517A22 /* YLExpression.h */,
+				BC28E8A21D62B95A00517A22 /* YLExpression.m */,
+				BC28E8A31D62B95A00517A22 /* YLSortDescription.h */,
+				BC28E8A41D62B95A00517A22 /* YLSortDescription.m */,
+				84EA36DE1D5AC65B00B569CC /* YLBaseModel.h */,
+				84EA36E41D5AC65B00B569CC /* YLBaseModel.m */,
+			);
+			name = YLORM;
+			sourceTree = "<group>";
+		};
+		84EA36DD1D5AC63C00B569CC /* YLSQL */ = {
+			isa = PBXGroup;
+			children = (
+				BC378E3D1D50C24B00E8B3DB /* YLSQLDatabase.h */,
+				BC378E3E1D50C24B00E8B3DB /* YLSQLDatabase.m */,
+				BC378E3F1D50C24B00E8B3DB /* YLSQLCommand.h */,
+				BC378E401D50C24B00E8B3DB /* YLSQLCommand.m */,
+				BC378E411D50C24B00E8B3DB /* YLSQLResult.h */,
+				BC378E421D50C24B00E8B3DB /* YLSQLResult.m */,
+				BC52A39F1D524A9800593E15 /* YLSQLResultCursor.h */,
+				BC52A3A01D524A9800593E15 /* YLSQLResultCursor.m */,
+				BC2A19C01D53383E00881FCC /* YLSQLDataDefine.h */,
+				BC2A19C11D53383E00881FCC /* YLSQLDataDefine.m */,
+				BC27DD6A1D5C6FE100E763A4 /* YLSQLTable */,
+			);
+			name = YLSQL;
+			sourceTree = "<group>";
+		};
+		84EAD50E1D51E6B000F23AAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84C6F14E1D63251900496942 /* NSString+Extension.h */,
+				84C6F14F1D63251900496942 /* NSString+Extension.m */,
+				BC2A19BB1D52FA4500881FCC /* mask4.png */,
+				BC52A3971D52467700593E15 /* maskImage.jpg */,
+				84EA36ED1D5AD2DC00B569CC /* UIImageView+YLNetworking.h */,
+				BE2963331D5B6170008A549D /* UIImageView+YLNetworking.m */,
+				BC52A3981D52467700593E15 /* UIImage+Extension.h */,
+				BC52A3991D52467700593E15 /* UIImage+Extension.m */,
+				BE2E00071D4A0F7F00EA7689 /* UIImageView+Mask.h */,
+				BE2E00081D4A0F7F00EA7689 /* UIImageView+Mask.m */,
+				842B5D0F1D4F24CD00BDEF0C /* UIImage+Resize.h */,
+				842B5D101D4F24CD00BDEF0C /* UIImage+Resize.m */,
+				84C943AF1D50462500F67378 /* NSDate+Format.h */,
+				84C943B01D50462500F67378 /* NSDate+Format.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		84F12F7E1D5D70CF0079123B /* MBHub */ = {
+			isa = PBXGroup;
+			children = (
+				84F12F7F1D5D70DA0079123B /* MBProgressHUD.h */,
+				84F12F801D5D70DA0079123B /* MBProgressHUD.m */,
+			);
+			name = MBHub;
+			sourceTree = "<group>";
+		};
+		84FC85571D4AFDFD0072C9C6 /* YLSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				84FC85671D4B33BE0072C9C6 /* YLResultSet.h */,
+				84FC85681D4B33BE0072C9C6 /* YLResultSet.m */,
+				84FC856A1D4B33BE0072C9C6 /* YLSQLite.h */,
+				84FC856B1D4B33BE0072C9C6 /* YLSQLite.m */,
+			);
+			name = YLSQLite;
+			sourceTree = "<group>";
+		};
+		84FC85751D4B38F20072C9C6 /* YLFriendCell */ = {
+			isa = PBXGroup;
+			children = (
+				84FC85761D4B38FB0072C9C6 /* YLFriendCell.h */,
+				84FC85771D4B38FB0072C9C6 /* YLFriendCell.m */,
+			);
+			name = YLFriendCell;
+			sourceTree = "<group>";
+		};
+		84FC85791D4B39550072C9C6 /* GroupChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E00021D4A0F7F00EA7689 /* GroupChatViewController.h */,
+				BE2E00031D4A0F7F00EA7689 /* GroupChatViewController.m */,
+			);
+			name = GroupChatViewController;
+			sourceTree = "<group>";
+		};
+		84FC857A1D4B39630072C9C6 /* MessageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC4271D4A1A4C00C72D2E /* MessageViewController.h */,
+				84FEC4281D4A1A4C00C72D2E /* MessageViewController.m */,
+			);
+			name = MessageViewController;
+			sourceTree = "<group>";
+		};
+		84FC857B1D4B39720072C9C6 /* CreateGroupChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84FC857C1D4B39890072C9C6 /* CreateGroupChatViewController.h */,
+				84FC857D1D4B39890072C9C6 /* CreateGroupChatViewController.m */,
+			);
+			name = CreateGroupChatViewController;
+			sourceTree = "<group>";
+		};
+		84FC857F1D4B3B6D0072C9C6 /* YLFriendSelectCell */ = {
+			isa = PBXGroup;
+			children = (
+				84FC85801D4B3B760072C9C6 /* YLFriendSelectCell.h */,
+				84FC85811D4B3B760072C9C6 /* YLFriendSelectCell.m */,
+			);
+			name = YLFriendSelectCell;
+			sourceTree = "<group>";
+		};
+		84FEC4221D4A19C100C72D2E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84F12F7B1D5C87A20079123B /* YALO_DB.db */,
+				BC27DD671D5C23AB00E763A4 /* YALO_DB.sqlite */,
+				BE2EFFD61D4A0DBD00EA7689 /* Assets.xcassets */,
+				BE2EFFDB1D4A0DBD00EA7689 /* Info.plist */,
+				BE2E00101D4A148F00EA7689 /* GoogleService-Info.plist */,
+				F411CE3E1D579AF7006EA2FF /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		84FEC4231D4A19C700C72D2E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F411CE331D571B08006EA2FF /* AuthenticatedNavigationController */,
+				F411CE2F1D5719AF006EA2FF /* AuthenticationViewController */,
+				BC2A19C31D534B3800881FCC /* GroupSettingViewController */,
+				84FC857B1D4B39720072C9C6 /* CreateGroupChatViewController */,
+				84FC857A1D4B39630072C9C6 /* MessageViewController */,
+				84FC85791D4B39550072C9C6 /* GroupChatViewController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		84FEC4241D4A19CC00C72D2E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F411CE481D579C8D006EA2FF /* YLUserInfoCollectionViewCell */,
+				F411CE471D579C55006EA2FF /* YLGroupMembersSettingCell */,
+				BC2A19CA1D534B8E00881FCC /* YLGroupSettingCell */,
+				842B5D1D1D4F68E600BDEF0C /* UXCollectionViewFlowLayout */,
+				84FC857F1D4B3B6D0072C9C6 /* YLFriendSelectCell */,
+				84FC85751D4B38F20072C9C6 /* YLFriendCell */,
+				84FEC42A1D4A1CFC00C72D2E /* YLMessageCell */,
+				84FEC4261D4A19FF00C72D2E /* YLGroupCell */,
+				BE2EFFD01D4A0DBD00EA7689 /* Main.storyboard */,
+				BE2EFFD81D4A0DBD00EA7689 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84FEC4251D4A19D600C72D2E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				84F12F7E1D5D70CF0079123B /* MBHub */,
+				84EAD50E1D51E6B000F23AAA /* Extensions */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		84FEC4261D4A19FF00C72D2E /* YLGroupCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E00041D4A0F7F00EA7689 /* YLGroupTableViewCell.h */,
+				BE2E00051D4A0F7F00EA7689 /* YLGroupTableViewCell.m */,
+			);
+			name = YLGroupCell;
+			sourceTree = "<group>";
+		};
+		84FEC42A1D4A1CFC00C72D2E /* YLMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				842B5D151D4F2E0200BDEF0C /* ChatSendCell.xib */,
+				842B5D161D4F2E0200BDEF0C /* ChatReceiveCell.xib */,
+				842B5D1A1D4F30A400BDEF0C /* YLChatCollectionViewCell.h */,
+				842B5D1B1D4F30A400BDEF0C /* YLChatCollectionViewCell.m */,
+			);
+			name = YLMessageCell;
+			sourceTree = "<group>";
+		};
+		BC27DD6A1D5C6FE100E763A4 /* YLSQLTable */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A19B61D52E1D900881FCC /* YLSQLTableManager.h */,
+				BC2A19B71D52E1D900881FCC /* YLSQLTableManager.m */,
+				BC2B6B2E1D5481A3003DA72D /* YLSQLRowData.h */,
+				BC2B6B2F1D5481A3003DA72D /* YLSQLRowData.m */,
+				BC2A19BD1D5337AF00881FCC /* YLSQLColumnAttributes.h */,
+				BC2A19BE1D5337AF00881FCC /* YLSQLColumnAttributes.m */,
+			);
+			name = YLSQLTable;
+			sourceTree = "<group>";
+		};
+		BC27DD711D5C899100E763A4 /* YLImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				BC27DD6B1D5C898700E763A4 /* FBCacheManager.h */,
+				BC27DD6C1D5C898700E763A4 /* FBCacheManager.m */,
+				BC27DD6D1D5C898700E763A4 /* FBImageCacheItem.h */,
+				BC27DD6E1D5C898700E763A4 /* FBImageCacheItem.m */,
+			);
+			name = YLImageCache;
+			sourceTree = "<group>";
+		};
+		BC2A19C31D534B3800881FCC /* GroupSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A19C41D534B6400881FCC /* GroupSettingViewController.h */,
+				BC2A19C51D534B6400881FCC /* GroupSettingViewController.m */,
+			);
+			name = GroupSettingViewController;
+			sourceTree = "<group>";
+		};
+		BC2A19CA1D534B8E00881FCC /* YLGroupSettingCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A19C71D534B8B00881FCC /* YLGroupSettingCell.h */,
+				BC2A19C81D534B8B00881FCC /* YLGroupSettingCell.m */,
+			);
+			name = YLGroupSettingCell;
+			sourceTree = "<group>";
+		};
+		BC378E461D50C25000E8B3DB /* SQLiteWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				BC28E8A81D62B97C00517A22 /* NSString+SQLExtension.h */,
+				BC28E8A91D62B97C00517A22 /* NSString+SQLExtension.m */,
+				84EA36DD1D5AC63C00B569CC /* YLSQL */,
+				84EA36DC1D5AC62D00B569CC /* YLORM */,
+			);
+			name = SQLiteWrapper;
+			sourceTree = "<group>";
+		};
+		BE2E00181D4A1D9F00EA7689 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84C943B21D504B3F00F67378 /* YLPerson.h */,
+				BE2E00221D4A1F0300EA7689 /* UserModels */,
+				BE4153831D4AF189002A206A /* ChatModels */,
+				BE6CF2A71D50A759002D6468 /* Threadsafe dictionary */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BE2E00221D4A1F0300EA7689 /* UserModels */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E001C1D4A1EBF00EA7689 /* YLPersonInfo.h */,
+				BE2E001D1D4A1EBF00EA7689 /* YLPersonInfo.m */,
+				BE2E00191D4A1DC900EA7689 /* YLUserInfo.h */,
+				BE2E001A1D4A1DC900EA7689 /* YLUserInfo.m */,
+				BE2E001F1D4A1EED00EA7689 /* YLFriendInfo.h */,
+				BE2E00201D4A1EED00EA7689 /* YLFriendInfo.m */,
+			);
+			name = UserModels;
+			sourceTree = "<group>";
+		};
+		BE2EFFBB1D4A0DBD00EA7689 = {
+			isa = PBXGroup;
+			children = (
+				BE2EFFC61D4A0DBD00EA7689 /* YALO */,
+				BE2EFFE31D4A0DBD00EA7689 /* YALOTests */,
+				BE2EFFEE1D4A0DBD00EA7689 /* YALOUITests */,
+				BE2EFFC51D4A0DBD00EA7689 /* Products */,
+				71A07AA3FFAC0379ED0D62CF /* Pods */,
+				7C67B957EF7FCE1B698CF0E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE2EFFC51D4A0DBD00EA7689 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE2EFFC41D4A0DBD00EA7689 /* YALO.app */,
+				BE2EFFE01D4A0DBD00EA7689 /* YALOTests.xctest */,
+				BE2EFFEB1D4A0DBD00EA7689 /* YALOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE2EFFC61D4A0DBD00EA7689 /* YALO */ = {
+			isa = PBXGroup;
+			children = (
+				BE2EFFCA1D4A0DBD00EA7689 /* AppDelegate.h */,
+				BE2EFFCB1D4A0DBD00EA7689 /* AppDelegate.m */,
+				BE6CF2A11D50A72F002D6468 /* int_type.h */,
+				84C943B41D50969800F67378 /* YLExtDefines.h */,
+				BC378E461D50C25000E8B3DB /* SQLiteWrapper */,
+				84FEC4251D4A19D600C72D2E /* Utility */,
+				BE4153841D4AFB64002A206A /* Managers */,
+				BE2E00181D4A1D9F00EA7689 /* Models */,
+				84FEC4241D4A19CC00C72D2E /* Views */,
+				84FEC4231D4A19C700C72D2E /* Controllers */,
+				84FEC4221D4A19C100C72D2E /* Resources */,
+				BE2EFFD31D4A0DBD00EA7689 /* YALO.xcdatamodeld */,
+				BE2EFFC71D4A0DBD00EA7689 /* Supporting Files */,
+			);
+			path = YALO;
+			sourceTree = "<group>";
+		};
+		BE2EFFC71D4A0DBD00EA7689 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84FC85831D4B3BA90072C9C6 /* PrefixHeader.pch */,
+				BE2EFFC81D4A0DBD00EA7689 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE2EFFE31D4A0DBD00EA7689 /* YALOTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE2EFFE41D4A0DBD00EA7689 /* YALOTests.m */,
+				BE2EFFE61D4A0DBD00EA7689 /* Info.plist */,
+			);
+			path = YALOTests;
+			sourceTree = "<group>";
+		};
+		BE2EFFEE1D4A0DBD00EA7689 /* YALOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE2EFFEF1D4A0DBD00EA7689 /* YALOUITests.m */,
+				BE2EFFF11D4A0DBD00EA7689 /* Info.plist */,
+			);
+			path = YALOUITests;
+			sourceTree = "<group>";
+		};
+		BE4153831D4AF189002A206A /* ChatModels */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E00231D4A1FFC00EA7689 /* YLGroupChat.h */,
+				BE2E00241D4A1FFC00EA7689 /* YLGroupChat.m */,
+				8402B6DE1D59CE230058036E /* YLGroupMember.h */,
+				8402B6DF1D59CE230058036E /* YLGroupMember.m */,
+				BE2E00261D4A206800EA7689 /* YLMessageDetail.h */,
+				BE2E00271D4A206800EA7689 /* YLMessageDetail.m */,
+			);
+			name = ChatModels;
+			sourceTree = "<group>";
+		};
+		BE4153841D4AFB64002A206A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CF2A81D50A78D002D6468 /* Download Manager */,
+				84FC85571D4AFDFD0072C9C6 /* YLSQLite */,
+				84FC85651D4B33BE0072C9C6 /* YLRequestManager.h */,
+				84FC85661D4B33BE0072C9C6 /* YLRequestManager.m */,
+				F411CE371D571D14006EA2FF /* YLNavigationController.h */,
+				F411CE381D571D14006EA2FF /* YLNavigationController.m */,
+			);
+			name = Managers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BE6CF2A71D50A759002D6468 /* Threadsafe dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CF2A21D50A72F002D6468 /* TSMutableDictionary.h */,
+				BE6CF2A31D50A72F002D6468 /* TSMutableDictionary.m */,
+			);
+			name = "Threadsafe dictionary";
+			sourceTree = "<group>";
+		};
+		BE6CF2A81D50A78D002D6468 /* Download Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BC27DD711D5C899100E763A4 /* YLImageCache */,
+				84C943B61D50ACE800F67378 /* YLNetworking.h */,
+				BE38E2181D4F671700107DB8 /* YLImageCache.h */,
+				BE38E2191D4F671700107DB8 /* YLImageCache.m */,
+				BE6CF29D1D50A72F002D6468 /* YLImageDownloader.h */,
+				BE6CF29E1D50A72F002D6468 /* YLImageDownloader.m */,
+				BE6CF29F1D50A72F002D6468 /* YLSessionManager.h */,
+				BE6CF2A01D50A72F002D6468 /* YLSessionManager.m */,
+			);
+			name = "Download Manager";
+			sourceTree = "<group>";
+		};
+		F411CE2F1D5719AF006EA2FF /* AuthenticationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F411CE301D5719C3006EA2FF /* AuthenticationViewController.h */,
+				F411CE311D5719C3006EA2FF /* AuthenticationViewController.m */,
+			);
+			name = AuthenticationViewController;
+			sourceTree = "<group>";
+		};
+		F411CE331D571B08006EA2FF /* AuthenticatedNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				F411CE341D571B50006EA2FF /* AuthenticatedNavigationController.h */,
+				F411CE351D571B50006EA2FF /* AuthenticatedNavigationController.m */,
+			);
+			name = AuthenticatedNavigationController;
+			sourceTree = "<group>";
+		};
+		F411CE471D579C55006EA2FF /* YLGroupMembersSettingCell */ = {
+			isa = PBXGroup;
+			children = (
+				F411CE441D579C4F006EA2FF /* YLGroupMembersSettingCell.h */,
+				F411CE451D579C4F006EA2FF /* YLGroupMembersSettingCell.m */,
+			);
+			name = YLGroupMembersSettingCell;
+			sourceTree = "<group>";
+		};
+		F411CE481D579C8D006EA2FF /* YLUserInfoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F411CE491D579C9C006EA2FF /* YLUserInfoCollectionViewCell.h */,
+				F411CE4A1D579C9C006EA2FF /* YLUserInfoCollectionViewCell.m */,
+			);
+			name = YLUserInfoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE2EFFC31D4A0DBD00EA7689 /* YALO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2EFFF41D4A0DBD00EA7689 /* Build configuration list for PBXNativeTarget "YALO" */;
+			buildPhases = (
+				F61584BD26526B2D93A73800 /* [CP] Check Pods Manifest.lock */,
+				BE2EFFC01D4A0DBD00EA7689 /* Sources */,
+				BE2EFFC11D4A0DBD00EA7689 /* Frameworks */,
+				BE2EFFC21D4A0DBD00EA7689 /* Resources */,
+				54ED682ACD3311AB94B7AEE5 /* [CP] Embed Pods Frameworks */,
+				0709633F7C157F0EEFD0177B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YALO;
+			productName = YALO;
+			productReference = BE2EFFC41D4A0DBD00EA7689 /* YALO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE2EFFDF1D4A0DBD00EA7689 /* YALOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2EFFF71D4A0DBD00EA7689 /* Build configuration list for PBXNativeTarget "YALOTests" */;
+			buildPhases = (
+				BE2EFFDC1D4A0DBD00EA7689 /* Sources */,
+				BE2EFFDD1D4A0DBD00EA7689 /* Frameworks */,
+				BE2EFFDE1D4A0DBD00EA7689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2EFFE21D4A0DBD00EA7689 /* PBXTargetDependency */,
+			);
+			name = YALOTests;
+			productName = YALOTests;
+			productReference = BE2EFFE01D4A0DBD00EA7689 /* YALOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE2EFFEA1D4A0DBD00EA7689 /* YALOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2EFFFA1D4A0DBD00EA7689 /* Build configuration list for PBXNativeTarget "YALOUITests" */;
+			buildPhases = (
+				BE2EFFE71D4A0DBD00EA7689 /* Sources */,
+				BE2EFFE81D4A0DBD00EA7689 /* Frameworks */,
+				BE2EFFE91D4A0DBD00EA7689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2EFFED1D4A0DBD00EA7689 /* PBXTargetDependency */,
+			);
+			name = YALOUITests;
+			productName = YALOUITests;
+			productReference = BE2EFFEB1D4A0DBD00EA7689 /* YALOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE2EFFBC1D4A0DBD00EA7689 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					BE2EFFC31D4A0DBD00EA7689 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8UL2HC5M7B;
+					};
+					BE2EFFDF1D4A0DBD00EA7689 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8UL2HC5M7B;
+						TestTargetID = BE2EFFC31D4A0DBD00EA7689;
+					};
+					BE2EFFEA1D4A0DBD00EA7689 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8UL2HC5M7B;
+						TestTargetID = BE2EFFC31D4A0DBD00EA7689;
+					};
+				};
+			};
+			buildConfigurationList = BE2EFFBF1D4A0DBD00EA7689 /* Build configuration list for PBXProject "YALO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = BE2EFFBB1D4A0DBD00EA7689;
+			productRefGroup = BE2EFFC51D4A0DBD00EA7689 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE2EFFC31D4A0DBD00EA7689 /* YALO */,
+				BE2EFFDF1D4A0DBD00EA7689 /* YALOTests */,
+				BE2EFFEA1D4A0DBD00EA7689 /* YALOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE2EFFC21D4A0DBD00EA7689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC52A39A1D52467700593E15 /* maskImage.jpg in Resources */,
+				BE2EFFDA1D4A0DBD00EA7689 /* LaunchScreen.storyboard in Resources */,
+				84F12F7C1D5C87A20079123B /* YALO_DB.db in Resources */,
+				BC27DD681D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */,
+				BE2E00111D4A148F00EA7689 /* GoogleService-Info.plist in Resources */,
+				BE2EFFD71D4A0DBD00EA7689 /* Assets.xcassets in Resources */,
+				F411CE3C1D579AF7006EA2FF /* Localizable.strings in Resources */,
+				BC2A19BC1D52FA4500881FCC /* mask4.png in Resources */,
+				842B5D191D4F2E0200BDEF0C /* ChatReceiveCell.xib in Resources */,
+				BE2EFFD21D4A0DBD00EA7689 /* Main.storyboard in Resources */,
+				842B5D181D4F2E0200BDEF0C /* ChatSendCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2EFFDE1D4A0DBD00EA7689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F12F7D1D5C87A20079123B /* YALO_DB.db in Resources */,
+				BC27DD691D5C23AB00E763A4 /* YALO_DB.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2EFFE91D4A0DBD00EA7689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0709633F7C157F0EEFD0177B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YALO/Pods-YALO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54ED682ACD3311AB94B7AEE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YALO/Pods-YALO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F61584BD26526B2D93A73800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE2EFFC01D4A0DBD00EA7689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F411CE321D5719C3006EA2FF /* AuthenticationViewController.m in Sources */,
+				842B5D201D4F68F600BDEF0C /* UXCollectionViewFlowLayout.m in Sources */,
+				84FC85781D4B38FB0072C9C6 /* YLFriendCell.m in Sources */,
+				BC378E441D50C24B00E8B3DB /* YLSQLCommand.m in Sources */,
+				BE6CF2A61D50A72F002D6468 /* TSMutableDictionary.m in Sources */,
+				BE2E000C1D4A0F7F00EA7689 /* YLGroupTableViewCell.m in Sources */,
+				BE2E00251D4A1FFC00EA7689 /* YLGroupChat.m in Sources */,
+				84C6F1501D63251900496942 /* NSString+Extension.m in Sources */,
+				84FC856E1D4B33BE0072C9C6 /* YLSQLite.m in Sources */,
+				BC27DD701D5C898700E763A4 /* FBImageCacheItem.m in Sources */,
+				BC28E8A61D62B95A00517A22 /* YLExpression.m in Sources */,
+				BE2E00211D4A1EED00EA7689 /* YLFriendInfo.m in Sources */,
+				BE2E000B1D4A0F7F00EA7689 /* GroupChatViewController.m in Sources */,
+				BC52A3A11D524A9800593E15 /* YLSQLResultCursor.m in Sources */,
+				BE2E001E1D4A1EBF00EA7689 /* YLPersonInfo.m in Sources */,
+				84FC856C1D4B33BE0072C9C6 /* YLRequestManager.m in Sources */,
+				BC27DD6F1D5C898700E763A4 /* FBCacheManager.m in Sources */,
+				F411CE4B1D579C9C006EA2FF /* YLUserInfoCollectionViewCell.m in Sources */,
+				BC2B6B301D5481A3003DA72D /* YLSQLRowData.m in Sources */,
+				BC2A19C91D534B8B00881FCC /* YLGroupSettingCell.m in Sources */,
+				84F12F811D5D70DA0079123B /* MBProgressHUD.m in Sources */,
+				BE2963341D5B6170008A549D /* UIImageView+YLNetworking.m in Sources */,
+				84FC857E1D4B39890072C9C6 /* CreateGroupChatViewController.m in Sources */,
+				84FC856D1D4B33BE0072C9C6 /* YLResultSet.m in Sources */,
+				BE2E000E1D4A0F7F00EA7689 /* UIImageView+Mask.m in Sources */,
+				84EA36E81D5AC65B00B569CC /* YLDatabaseManager.m in Sources */,
+				BC2A19B81D52E1D900881FCC /* YLSQLTableManager.m in Sources */,
+				84FC85821D4B3B760072C9C6 /* YLFriendSelectCell.m in Sources */,
+				BC2A19BF1D5337AF00881FCC /* YLSQLColumnAttributes.m in Sources */,
+				BE6CF2A51D50A72F002D6468 /* YLSessionManager.m in Sources */,
+				84C943B11D50462500F67378 /* NSDate+Format.m in Sources */,
+				BE6CF2A41D50A72F002D6468 /* YLImageDownloader.m in Sources */,
+				BC378E451D50C24B00E8B3DB /* YLSQLResult.m in Sources */,
+				84EA36EA1D5AC65B00B569CC /* YLBaseModel.m in Sources */,
+				BE2EFFCC1D4A0DBD00EA7689 /* AppDelegate.m in Sources */,
+				BE2E00281D4A206800EA7689 /* YLMessageDetail.m in Sources */,
+				BC52A39B1D52467700593E15 /* UIImage+Extension.m in Sources */,
+				8402B6E01D59CE230058036E /* YLGroupMember.m in Sources */,
+				BE2EFFD51D4A0DBD00EA7689 /* YALO.xcdatamodeld in Sources */,
+				F411CE391D571D14006EA2FF /* YLNavigationController.m in Sources */,
+				BC2A19C61D534B6400881FCC /* GroupSettingViewController.m in Sources */,
+				BE2E001B1D4A1DC900EA7689 /* YLUserInfo.m in Sources */,
+				BC28E8A71D62B95A00517A22 /* YLSortDescription.m in Sources */,
+				BE38E21A1D4F671700107DB8 /* YLImageCache.m in Sources */,
+				84FEC4291D4A1A4C00C72D2E /* MessageViewController.m in Sources */,
+				BC28E8AA1D62B97C00517A22 /* NSString+SQLExtension.m in Sources */,
+				BC28E8A51D62B95A00517A22 /* YLDatabaseQueue.m in Sources */,
+				BE2EFFC91D4A0DBD00EA7689 /* main.m in Sources */,
+				BC378E431D50C24B00E8B3DB /* YLSQLDatabase.m in Sources */,
+				F411CE461D579C4F006EA2FF /* YLGroupMembersSettingCell.m in Sources */,
+				BC2A19C21D53383E00881FCC /* YLSQLDataDefine.m in Sources */,
+				842B5D1C1D4F30A400BDEF0C /* YLChatCollectionViewCell.m in Sources */,
+				842B5D111D4F24CD00BDEF0C /* UIImage+Resize.m in Sources */,
+				F411CE361D571B50006EA2FF /* AuthenticatedNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2EFFDC1D4A0DBD00EA7689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2EFFE51D4A0DBD00EA7689 /* YALOTests.m in Sources */,
+				84F12F821D5D70DA0079123B /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2EFFE71D4A0DBD00EA7689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2EFFF01D4A0DBD00EA7689 /* YALOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE2EFFE21D4A0DBD00EA7689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2EFFC31D4A0DBD00EA7689 /* YALO */;
+			targetProxy = BE2EFFE11D4A0DBD00EA7689 /* PBXContainerItemProxy */;
+		};
+		BE2EFFED1D4A0DBD00EA7689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2EFFC31D4A0DBD00EA7689 /* YALO */;
+			targetProxy = BE2EFFEC1D4A0DBD00EA7689 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE2EFFD01D4A0DBD00EA7689 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2EFFD11D4A0DBD00EA7689 /* Base */,
+				F411CE401D579B3F006EA2FF /* vi */,
+				F411CE431D579B66006EA2FF /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE2EFFD81D4A0DBD00EA7689 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2EFFD91D4A0DBD00EA7689 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F411CE3E1D579AF7006EA2FF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F411CE3F1D579AFB006EA2FF /* Base */,
+				F411CE411D579B3F006EA2FF /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE2EFFF21D4A0DBD00EA7689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE2EFFF31D4A0DBD00EA7689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE2EFFF51D4A0DBD00EA7689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA5BACADD9E004A75B92C17 /* Pods-YALO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8UL2HC5M7B;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = YALO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/YALO",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fresher2016.FireChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		BE2EFFF61D4A0DBD00EA7689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 212C2D61EA4F15F96DCBA303 /* Pods-YALO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8UL2HC5M7B;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = YALO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/YALO",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fresher2016.FireChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		BE2EFFF81D4A0DBD00EA7689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YALOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNG.YALOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YALO.app/YALO";
+			};
+			name = Debug;
+		};
+		BE2EFFF91D4A0DBD00EA7689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YALOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNG.YALOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YALO.app/YALO";
+			};
+			name = Release;
+		};
+		BE2EFFFB1D4A0DBD00EA7689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YALOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNG.YALOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YALO;
+			};
+			name = Debug;
+		};
+		BE2EFFFC1D4A0DBD00EA7689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YALOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNG.YALOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YALO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE2EFFBF1D4A0DBD00EA7689 /* Build configuration list for PBXProject "YALO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2EFFF21D4A0DBD00EA7689 /* Debug */,
+				BE2EFFF31D4A0DBD00EA7689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2EFFF41D4A0DBD00EA7689 /* Build configuration list for PBXNativeTarget "YALO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2EFFF51D4A0DBD00EA7689 /* Debug */,
+				BE2EFFF61D4A0DBD00EA7689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2EFFF71D4A0DBD00EA7689 /* Build configuration list for PBXNativeTarget "YALOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2EFFF81D4A0DBD00EA7689 /* Debug */,
+				BE2EFFF91D4A0DBD00EA7689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2EFFFA1D4A0DBD00EA7689 /* Build configuration list for PBXNativeTarget "YALOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2EFFFB1D4A0DBD00EA7689 /* Debug */,
+				BE2EFFFC1D4A0DBD00EA7689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE2EFFD31D4A0DBD00EA7689 /* YALO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE2EFFD41D4A0DBD00EA7689 /* YALO.xcdatamodel */,
+			);
+			currentVersion = BE2EFFD41D4A0DBD00EA7689 /* YALO.xcdatamodel */;
+			path = YALO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE2EFFBC1D4A0DBD00EA7689 /* Project object */;
+}
